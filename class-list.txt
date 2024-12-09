@@ -1,0 +1,7 @@
+com.operations.Matrix.Matrix
+com.operations.Matrix.MatrixUtils
+com.operations.Matrix.MatrixOperations
+com.operations.Matrix.MatrixDecompositions
+com.operations.Matrix.MatrixSolver
+com.operations.Matrix.MatrixApplication
+com.operations.Matrix.MatrixTransformations
