@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixDecompositions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">MatrixDecompositions.java</span></div><h1>MatrixDecompositions.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+<span class="fc" id="L3">public class MatrixDecompositions {</span>
+
+    public static Matrix[] luDecomposition(Matrix matrix) {
+<span class="fc" id="L6">        int n = matrix.getRows();</span>
+<span class="fc bfc" id="L7" title="All 2 branches covered.">        if (n != matrix.getCols()) {</span>
+<span class="fc" id="L8">            throw new IllegalArgumentException(&quot;Matrix must be square for LU decomposition.&quot;);</span>
+        }
+
+<span class="fc" id="L11">        double[][] lower = new double[n][n];</span>
+<span class="fc" id="L12">        double[][] upper = new double[n][n];</span>
+<span class="fc" id="L13">        double[][] data = matrix.getData();</span>
+
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for (int i = 0; i &lt; n; i++) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">            for (int j = i; j &lt; n; j++) {</span>
+<span class="fc" id="L17">                upper[i][j] = data[i][j];</span>
+<span class="fc bfc" id="L18" title="All 2 branches covered.">                for (int k = 0; k &lt; i; k++) {</span>
+<span class="fc" id="L19">                    upper[i][j] -= lower[i][k] * upper[k][j];</span>
+                }
+            }
+
+<span class="fc bfc" id="L23" title="All 2 branches covered.">            for (int j = i; j &lt; n; j++) {</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">                if (i == j) {</span>
+<span class="fc" id="L25">                    lower[i][i] = 1;</span>
+                } else {
+<span class="fc" id="L27">                    lower[j][i] = data[j][i];</span>
+<span class="fc bfc" id="L28" title="All 2 branches covered.">                    for (int k = 0; k &lt; i; k++) {</span>
+<span class="fc" id="L29">                        lower[j][i] -= lower[j][k] * upper[k][i];</span>
+                    }
+<span class="fc" id="L31">                    lower[j][i] /= upper[i][i];</span>
+                }
+            }
+        }
+
+<span class="fc" id="L36">        return new Matrix[]{new Matrix(lower), new Matrix(upper)};</span>
+    }
+
+    public static Matrix choleskyDecomposition(Matrix matrix) {
+<span class="fc" id="L40">        int n = matrix.getRows();</span>
+<span class="fc bfc" id="L41" title="All 2 branches covered.">        if (n != matrix.getCols()) {</span>
+<span class="fc" id="L42">            throw new IllegalArgumentException(&quot;Matrix must be square for Cholesky decomposition.&quot;);</span>
+        }
+
+<span class="fc" id="L45">        double[][] lower = new double[n][n];</span>
+<span class="fc" id="L46">        double[][] data = matrix.getData();</span>
+
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (int i = 0; i &lt; n; i++) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            for (int j = 0; j &lt;= i; j++) {</span>
+<span class="fc" id="L50">                double sum = 0;</span>
+<span class="fc bfc" id="L51" title="All 2 branches covered.">                if (i == j) {</span>
+<span class="fc bfc" id="L52" title="All 2 branches covered.">                    for (int k = 0; k &lt; j; k++) {</span>
+<span class="fc" id="L53">                        sum += Math.pow(lower[j][k], 2);</span>
+                    }
+<span class="fc" id="L55">                    double value = data[j][j] - sum;</span>
+<span class="fc bfc" id="L56" title="All 2 branches covered.">                    if (value &lt;= 0) { // Check for positive definiteness</span>
+<span class="fc" id="L57">                        throw new IllegalArgumentException(&quot;Matrix is not positive definite.&quot;);</span>
+                    }
+<span class="fc" id="L59">                    lower[j][j] = Math.sqrt(value);</span>
+<span class="fc" id="L60">                } else {</span>
+<span class="fc bfc" id="L61" title="All 2 branches covered.">                    for (int k = 0; k &lt; j; k++) {</span>
+<span class="fc" id="L62">                        sum += lower[i][k] * lower[j][k];</span>
+                    }
+<span class="fc" id="L64">                    lower[i][j] = (data[i][j] - sum) / lower[j][j];</span>
+                }
+            }
+        }
+<span class="fc" id="L68">        return new Matrix(lower);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

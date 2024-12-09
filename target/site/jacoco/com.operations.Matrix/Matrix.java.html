@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Matrix.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">Matrix.java</span></div><h1>Matrix.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+
+
+import java.util.Arrays;
+
+public class Matrix {
+    private final double[][] data;
+    private final int rows;
+    private final int cols;
+
+    // Constructor
+<span class="fc" id="L13">    public Matrix(int rows, int cols) {</span>
+<span class="fc" id="L14">        this.rows = rows;</span>
+<span class="fc" id="L15">        this.cols = cols;</span>
+<span class="fc" id="L16">        this.data = new double[rows][cols];</span>
+<span class="fc" id="L17">    }</span>
+
+<span class="fc" id="L19">    public Matrix(double[][] data) {</span>
+<span class="fc" id="L20">        this.rows = data.length;</span>
+<span class="fc" id="L21">        this.cols = data[0].length;</span>
+<span class="fc" id="L22">        this.data = deepCopy(data);</span>
+<span class="fc" id="L23">    }</span>
+
+    public int getRows() {
+<span class="fc" id="L26">        return rows;</span>
+    }
+
+    public int getCols() {
+<span class="fc" id="L30">        return cols;</span>
+    }
+
+    public double getValue(int row, int col) {
+<span class="fc" id="L34">        return data[row][col];</span>
+    }
+
+    public void setValue(int row, int col, double value) {
+<span class="fc" id="L38">        data[row][col] = value;</span>
+<span class="fc" id="L39">    }</span>
+
+    public double[][] getData() {
+<span class="fc" id="L42">        return deepCopy(data);</span>
+    }
+
+    private double[][] deepCopy(double[][] matrix) {
+<span class="fc" id="L46">        double[][] copy = new double[matrix.length][matrix[0].length];</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">        for (int i = 0; i &lt; matrix.length; i++) {</span>
+<span class="fc" id="L48">            copy[i] = Arrays.copyOf(matrix[i], matrix[i].length);</span>
+        }
+<span class="fc" id="L50">        return copy;</span>
+    }
+
+    
+    public void print() {
+<span class="fc bfc" id="L55" title="All 2 branches covered.">        for (int i = 0; i &lt; data.length; i++) {</span>
+<span class="fc" id="L56">            System.out.println(Arrays.toString(data[i]));</span>
+        }
+<span class="fc" id="L58">    }</span>
+
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

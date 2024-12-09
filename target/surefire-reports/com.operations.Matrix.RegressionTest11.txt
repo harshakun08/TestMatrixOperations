@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.operations.Matrix.RegressionTest11
+-------------------------------------------------------------------------------
+Tests run: 500, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s -- in com.operations.Matrix.RegressionTest11

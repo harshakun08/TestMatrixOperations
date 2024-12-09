@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixSolver.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">MatrixSolver.java</span></div><h1>MatrixSolver.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+<span class="fc" id="L3">public class MatrixSolver {</span>
+
+	public static double[] solveGaussian(Matrix matrix, double[] constants) {
+<span class="fc bfc" id="L6" title="All 2 branches covered.">	    if (matrix.getRows() != matrix.getCols()) {</span>
+<span class="fc" id="L7">	        throw new IllegalArgumentException(&quot;Matrix must be square to solve equations.&quot;);</span>
+	    }
+<span class="fc bfc" id="L9" title="All 2 branches covered.">	    if (matrix.getRows() != constants.length) {</span>
+<span class="fc" id="L10">	        throw new IllegalArgumentException(&quot;Constant vector size must match matrix size.&quot;);</span>
+	    }
+
+<span class="fc" id="L13">	    int n = matrix.getRows();</span>
+<span class="fc" id="L14">	    double[][] augmented = new double[n][n + 1];</span>
+
+	    // Augment the matrix with constants
+<span class="fc bfc" id="L17" title="All 2 branches covered.">	    for (int i = 0; i &lt; n; i++) {</span>
+<span class="fc" id="L18">	        System.arraycopy(matrix.getData()[i], 0, augmented[i], 0, n);</span>
+<span class="fc" id="L19">	        augmented[i][n] = constants[i];</span>
+	    }
+
+	    // Gaussian elimination
+<span class="fc bfc" id="L23" title="All 2 branches covered.">	    for (int i = 0; i &lt; n; i++) {</span>
+	        // Partial pivoting
+<span class="fc bfc" id="L25" title="All 2 branches covered.">	        for (int k = i + 1; k &lt; n; k++) {</span>
+<span class="fc bfc" id="L26" title="All 2 branches covered.">	            if (Math.abs(augmented[k][i]) &gt; Math.abs(augmented[i][i])) {</span>
+<span class="fc" id="L27">	                double[] temp = augmented[i];</span>
+<span class="fc" id="L28">	                augmented[i] = augmented[k];</span>
+<span class="fc" id="L29">	                augmented[k] = temp;</span>
+	            }
+	        }
+
+	        // Check for singular matrix
+<span class="fc bfc" id="L34" title="All 2 branches covered.">	        if (Math.abs(augmented[i][i]) &lt; 1e-10) {</span>
+<span class="fc" id="L35">	            throw new IllegalArgumentException(&quot;Matrix is singular or nearly singular.&quot;);</span>
+	        }
+
+	        // Normalize row i
+<span class="fc bfc" id="L39" title="All 2 branches covered.">	        for (int j = i + 1; j &lt;= n; j++) {</span>
+<span class="fc" id="L40">	            augmented[i][j] /= augmented[i][i];</span>
+	        }
+<span class="fc" id="L42">	        augmented[i][i] = 1;</span>
+
+	        // Eliminate column i in subsequent rows
+<span class="fc bfc" id="L45" title="All 2 branches covered.">	        for (int k = i + 1; k &lt; n; k++) {</span>
+<span class="fc" id="L46">	            double factor = augmented[k][i];</span>
+<span class="fc bfc" id="L47" title="All 2 branches covered.">	            for (int j = i; j &lt;= n; j++) {</span>
+<span class="fc" id="L48">	                augmented[k][j] -= factor * augmented[i][j];</span>
+	            }
+	        }
+	    }
+
+	    // Back-substitution
+<span class="fc" id="L54">	    double[] solution = new double[n];</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">	    for (int i = n - 1; i &gt;= 0; i--) {</span>
+<span class="fc" id="L56">	        solution[i] = augmented[i][n];</span>
+<span class="fc bfc" id="L57" title="All 2 branches covered.">	        for (int j = i + 1; j &lt; n; j++) {</span>
+<span class="fc" id="L58">	            solution[i] -= augmented[i][j] * solution[j];</span>
+	        }
+	    }
+<span class="fc" id="L61">	    return solution;</span>
+	}
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

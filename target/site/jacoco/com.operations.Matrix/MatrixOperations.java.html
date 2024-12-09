@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixOperations.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">MatrixOperations.java</span></div><h1>MatrixOperations.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+
+
+<span class="fc" id="L5">public class MatrixOperations {</span>
+
+    public static Matrix add(Matrix a, Matrix b) {
+<span class="fc bfc" id="L8" title="All 4 branches covered.">        if (a.getRows() != b.getRows() || a.getCols() != b.getCols()) {</span>
+<span class="fc" id="L9">            throw new IllegalArgumentException(&quot;Matrices must have the same dimensions for addition.&quot;);</span>
+        }
+<span class="fc" id="L11">        int rows = a.getRows();</span>
+<span class="fc" id="L12">        int cols = a.getCols();</span>
+<span class="fc" id="L13">        double[][] result = new double[rows][cols];</span>
+
+<span class="fc bfc" id="L15" title="All 2 branches covered.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="fc bfc" id="L16" title="All 2 branches covered.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="fc" id="L17">                result[i][j] = a.getValue(i, j) + b.getValue(i, j);</span>
+            }
+        }
+<span class="fc" id="L20">        return new Matrix(result);</span>
+    }
+
+    public static Matrix subtract(Matrix a, Matrix b) {
+<span class="fc bfc" id="L24" title="All 4 branches covered.">        if (a.getRows() != b.getRows() || a.getCols() != b.getCols()) {</span>
+<span class="fc" id="L25">            throw new IllegalArgumentException(&quot;Matrices must have the same dimensions for subtraction.&quot;);</span>
+        }
+<span class="fc" id="L27">        int rows = a.getRows();</span>
+<span class="fc" id="L28">        int cols = a.getCols();</span>
+<span class="fc" id="L29">        double[][] result = new double[rows][cols];</span>
+
+<span class="fc bfc" id="L31" title="All 2 branches covered.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="fc bfc" id="L32" title="All 2 branches covered.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="fc" id="L33">                result[i][j] = a.getValue(i, j) - b.getValue(i, j);</span>
+            }
+        }
+<span class="fc" id="L36">        return new Matrix(result);</span>
+    }
+
+    public static Matrix multiply(Matrix a, Matrix b) {
+<span class="fc bfc" id="L40" title="All 2 branches covered.">        if (a.getCols() != b.getRows()) {</span>
+<span class="fc" id="L41">            throw new IllegalArgumentException(&quot;Matrix A's columns must match Matrix B's rows for multiplication.&quot;);</span>
+        }
+<span class="fc" id="L43">        int rows = a.getRows();</span>
+<span class="fc" id="L44">        int cols = b.getCols();</span>
+<span class="fc" id="L45">        int commonDim = a.getCols();</span>
+<span class="fc" id="L46">        double[][] result = new double[rows][cols];</span>
+
+<span class="fc bfc" id="L48" title="All 2 branches covered.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="fc bfc" id="L49" title="All 2 branches covered.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">                for (int k = 0; k &lt; commonDim; k++) {</span>
+<span class="fc" id="L51">                    result[i][j] += a.getValue(i, k) * b.getValue(k, j);</span>
+                }
+            }
+        }
+<span class="fc" id="L55">        return new Matrix(result);</span>
+    }
+    public static Matrix transpose(Matrix matrix) {
+<span class="fc" id="L58">        int rows = matrix.getRows();</span>
+<span class="fc" id="L59">        int cols = matrix.getCols();</span>
+<span class="fc" id="L60">        double[][] result = new double[cols][rows];</span>
+
+<span class="fc bfc" id="L62" title="All 2 branches covered.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="fc bfc" id="L63" title="All 2 branches covered.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="fc" id="L64">                result[j][i] = matrix.getValue(i, j);</span>
+            }
+        }
+<span class="fc" id="L67">        return new Matrix(result);</span>
+    }
+
+    public static Matrix scalarMultiply(Matrix matrix, double scalar) {
+<span class="fc" id="L71">        int rows = matrix.getRows();</span>
+<span class="fc" id="L72">        int cols = matrix.getCols();</span>
+<span class="fc" id="L73">        double[][] result = new double[rows][cols];</span>
+
+<span class="fc bfc" id="L75" title="All 2 branches covered.">        for (int i = 0; i &lt; rows; i++) {</span>
+<span class="fc bfc" id="L76" title="All 2 branches covered.">            for (int j = 0; j &lt; cols; j++) {</span>
+<span class="fc" id="L77">                result[i][j] = matrix.getValue(i, j) * scalar;</span>
+            }
+        }
+<span class="fc" id="L80">        return new Matrix(result);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

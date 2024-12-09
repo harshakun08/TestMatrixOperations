@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixTransformations.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">MatrixTransformations.java</span></div><h1>MatrixTransformations.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+
+
+<span class="fc" id="L5">public class MatrixTransformations {</span>
+
+    public static Matrix rotate2D(double angle) {
+<span class="fc" id="L8">        double radians = Math.toRadians(angle);</span>
+<span class="fc" id="L9">        double[][] rotationMatrix = {</span>
+<span class="fc" id="L10">            { Math.cos(radians), -Math.sin(radians) },</span>
+<span class="fc" id="L11">            { Math.sin(radians), Math.cos(radians) }</span>
+        };
+<span class="fc" id="L13">        return new Matrix(rotationMatrix);</span>
+    }
+
+    public static Matrix scale2D(double scaleX, double scaleY) {
+<span class="fc" id="L17">        double[][] scaleMatrix = {</span>
+            { scaleX, 0 },
+            { 0, scaleY }
+        };
+<span class="fc" id="L21">        return new Matrix(scaleMatrix);</span>
+    }
+
+    public static Matrix project2D(double x, double y) {
+<span class="fc" id="L25">        double[][] projectionMatrix = {</span>
+            { x, 0 },
+            { 0, y }
+        };
+<span class="fc" id="L29">        return new Matrix(projectionMatrix);</span>
+    }
+}
+
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

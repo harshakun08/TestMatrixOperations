@@ -1,0 +1,1614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.operations.Matrix.RegressionTest10" time="0.08" tests="500" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\test-classes;C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\classes;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.0\spring-boot-starter-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot\3.4.0\spring-boot-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-context\6.2.0\spring-context-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-aop\6.2.0\spring-aop-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-beans\6.2.0\spring-beans-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-expression\6.2.0\spring-expression-6.2.0.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-observation\1.14.1\micrometer-observation-1.14.1.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-commons\1.14.1\micrometer-commons-1.14.1.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.0\spring-boot-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.0\spring-boot-starter-logging-3.4.0.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-classic\1.5.12\logback-classic-1.5.12.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-core\1.5.12\logback-core-1.5.12.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.1\log4j-to-slf4j-2.24.1.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\babal\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-core\6.2.0\spring-core-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-jcl\6.2.0\spring-jcl-6.2.0.jar;C:\Users\babal\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.0\spring-boot-starter-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test\3.4.0\spring-boot-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.0\spring-boot-test-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\babal\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\babal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\babal\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\babal\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\babal\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\babal\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\babal\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.10\byte-buddy-agent-1.15.10.jar;C:\Users\babal\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\babal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\babal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\babal\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\babal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\babal\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\babal\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-test\6.2.0\spring-test-6.2.0.jar;C:\Users\babal\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\babal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Phoenix"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028\surefirebooter-20241209114331853_3.jar C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028 2024-12-09T11-43-31_743-jvmRun1 surefire-20241209114331853_1tmp surefire_0-20241209114331853_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\test-classes;C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\classes;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.0\spring-boot-starter-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot\3.4.0\spring-boot-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-context\6.2.0\spring-context-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-aop\6.2.0\spring-aop-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-beans\6.2.0\spring-beans-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-expression\6.2.0\spring-expression-6.2.0.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-observation\1.14.1\micrometer-observation-1.14.1.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-commons\1.14.1\micrometer-commons-1.14.1.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.0\spring-boot-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.0\spring-boot-starter-logging-3.4.0.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-classic\1.5.12\logback-classic-1.5.12.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-core\1.5.12\logback-core-1.5.12.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.1\log4j-to-slf4j-2.24.1.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\babal\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-core\6.2.0\spring-core-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-jcl\6.2.0\spring-jcl-6.2.0.jar;C:\Users\babal\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.0\spring-boot-starter-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test\3.4.0\spring-boot-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.0\spring-boot-test-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\babal\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\babal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\babal\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\babal\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\babal\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\babal\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\babal\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.10\byte-buddy-agent-1.15.10.jar;C:\Users\babal\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\babal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\babal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\babal\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\babal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\babal\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\babal\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-test\6.2.0\spring-test-6.2.0.jar;C:\Users\babal\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\babal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\babal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028\surefirebooter-20241209114331853_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+11-LTS"/>
+    <property name="user.name" value="babal"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.5+11"/>
+    <property name="localRepository" value="C:\Users\babal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\babal\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files\Java\jdk-23;C:\Users\babal\Downloads\cloc-master;C:\ProgramData\chocolatey\bin;C:\Users\babal\tools\evosuite;C:\Program Files\Apache\maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\babal\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\babal\AppData\Local\Programs\Python\Python312\;C:\Users\babal\AppData\Local\Programs\Python\Launcher\;C:\Users\babal\AppData\Local\Microsoft\WindowsApps;C:\Users\babal\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\babal\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.5+11-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="test5001" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5002" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5003" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5004" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5005" classname="com.operations.Matrix.RegressionTest10" time="0.002"/>
+  <testcase name="test5006" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5007" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5008" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5009" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5010" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5011" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5012" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5013" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5014" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5015" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5016" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5017" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5018" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 1.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5019" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 20.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5020" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5021" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5022" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5023" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[970.0, 9409.0]
+[970.0, 9409.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5024" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5025" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5026" classname="com.operations.Matrix.RegressionTest10" time="0.002"/>
+  <testcase name="test5027" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5028" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5029" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5030" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5031" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5032" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5033" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5034" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5035" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5036" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5037" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5038" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5039" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5040" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5041" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5042" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5043" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5044" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5045" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5046" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5047" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[9.82635182233307, 96.0151922469878]
+[10.984807753012207, 96.82635182233307]
+]]></system-out>
+  </testcase>
+  <testcase name="test5048" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5049" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5050" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5051" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5052" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5053" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5054" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5055" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5056" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5057" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5058" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5059" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[137.90576492663388, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5060" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5061" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5062" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5063" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5064" classname="com.operations.Matrix.RegressionTest10" time="0.002"/>
+  <testcase name="test5065" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5066" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5067" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5068" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5069" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5070" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5071" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5072" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5073" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5074" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5075" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5076" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5077" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[35.0, 0.0]
+[0.0, 364.0054944640259]
+]]></system-out>
+  </testcase>
+  <testcase name="test5078" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5079" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5080" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5081" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5082" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5083" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5084" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5085" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5086" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 100.0]
+[0.0, 970.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5087" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5088" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5089" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[3640.0549446402592, 35308.53296301051]
+[3640.0549446402592, 35308.53296301051]
+]]></system-out>
+  </testcase>
+  <testcase name="test5090" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5091" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5092" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5093" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5094" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5095" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5096" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5097" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5098" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5099" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5100" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5101" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5102" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5103" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5104" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5105" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5106" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5107" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5108" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+]]></system-out>
+  </testcase>
+  <testcase name="test5109" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5110" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5111" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5112" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5113" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5114" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5115" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5116" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5117" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5118" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5119" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5120" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5121" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5122" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5123" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5124" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5125" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5126" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[52.009614495783374, 0.0]
+[0.0, 100.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5127" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5128" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5129" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5130" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5131" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5132" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5133" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5134" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5135" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5136" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5137" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5138" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5139" classname="com.operations.Matrix.RegressionTest10" time="0.002"/>
+  <testcase name="test5140" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5141" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5142" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5143" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5144" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5145" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5146" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5147" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5148" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5149" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[3.1622776601683795, 0.0]
+[3.162277660168379, 9.327379053088816]
+]]></system-out>
+  </testcase>
+  <testcase name="test5150" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5151" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5152" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5153" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5154" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5155" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5156" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[3.33592583783531, 0.984807753012208]
+[2.177469907156171, 9.501027230755746]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5157" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5158" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5159" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5160" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5161" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5162" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-1.0, 0.0]
+[0.0, 20.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5163" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5164" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5165" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5166" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.0, 0.0]
+[0.0, 0.0]
+[0.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5167" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5168" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5169" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5170" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5171" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5172" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5173" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[3.1622776601683795, 0.0]
+[3.162277660168379, 9.327379053088816]
+]]></system-out>
+  </testcase>
+  <testcase name="test5174" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5175" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+]]></system-out>
+  </testcase>
+  <testcase name="test5176" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5177" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5178" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5179" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5180" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5181" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5182" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5183" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5184" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5185" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5186" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.9961801065592789, 0.0]
+[-0.17565343043143464, 0.9726108166408128]
+]]></system-out>
+  </testcase>
+  <testcase name="test5187" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5188" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5189" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5190" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[]
+]]></system-out>
+  </testcase>
+  <testcase name="test5191" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5192" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5193" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5194" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5195" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5196" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5197" classname="com.operations.Matrix.RegressionTest10" time="0.002">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5198" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5199" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5200" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5201" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5202" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5203" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5204" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5205" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5206" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5207" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5208" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5209" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5210" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5211" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5212" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5213" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5214" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5215" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5216" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5217" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5218" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 0.0]
+[0.0, 1.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5219" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5220" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5221" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5222" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5223" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5224" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5225" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5226" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5227" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5228" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5229" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 32.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5230" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5231" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5232" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5233" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5234" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5235" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5236" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5237" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5238" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5239" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5240" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5241" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5242" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5243" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5244" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.0, 0.0]
+[0.0, 10.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 107.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5245" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5246" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5247" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5248" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5249" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5250" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5251" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 100.0]
+[0.0, 970.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5252" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5253" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5254" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5255" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5256" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5257" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5258" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5259" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5260" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5261" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5262" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5263" classname="com.operations.Matrix.RegressionTest10" time="0.002"/>
+  <testcase name="test5264" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5265" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+]]></system-out>
+  </testcase>
+  <testcase name="test5266" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5267" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5268" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5269" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5270" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[-1.0, 0.0]
+[0.0, 146.4308710620817]
+]]></system-out>
+  </testcase>
+  <testcase name="test5271" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5272" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5273" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5274" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5275" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5276" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5277" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5278" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5279" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+]]></system-out>
+  </testcase>
+  <testcase name="test5280" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5281" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 350.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5282" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5283" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5284" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5285" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5286" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5287" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5288" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5289" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5290" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[1.0, 0.0]
+[0.0, 1.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5291" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5292" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5293" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5294" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5295" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5296" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5297" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5298" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5299" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5300" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5301" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5302" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5303" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5304" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5305" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5306" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5307" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5308" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5309" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5310" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5311" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5312" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5313" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5314" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5315" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5316" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5317" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+]]></system-out>
+  </testcase>
+  <testcase name="test5318" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5319" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5320" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5321" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5322" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5323" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5324" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5325" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5326" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5327" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5328" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+]]></system-out>
+  </testcase>
+  <testcase name="test5329" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5330" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5331" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5332" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5333" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5334" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+[137.13497001129946, 0.0]
+[0.0, 137.15495886388925]
+]]></system-out>
+  </testcase>
+  <testcase name="test5335" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5336" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5337" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5338" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5339" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5340" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5341" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5342" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5343" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5344" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5345" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5346" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5347" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5348" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5349" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5350" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5351" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5352" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5353" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5354" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5355" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5356" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-5.55674168534177, -31.513848096390657]
+[31.513848096390657, -5.55674168534177]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5357" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5358" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.984807753012208, -0.17364817766693033]
+[0.17364817766693033, 0.984807753012208]
+]]></system-out>
+  </testcase>
+  <testcase name="test5359" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5360" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5361" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5362" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5363" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5364" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5365" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5366" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5367" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5368" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 100.0]
+[0.0, 970.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5369" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+]]></system-out>
+  </testcase>
+  <testcase name="test5370" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5371" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5372" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5373" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5374" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5375" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5376" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5377" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5378" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5379" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5380" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5381" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 100.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5382" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5383" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[-0.2695697032565728, -0.7421972094042196, -0.9407980341887554, -0.7558827494357468, -0.1811909771447684, -0.6293888739863586, -0.14371706705854026, -0.28501532360410253, -0.7127431131855595, -0.08375304873823752]
+[-0.9917238515749963, -0.5593775195455774, -0.9686660515048868, -0.07728892296784273, -0.03789624289522042, -0.19921897820570067, -0.5630971641931769, -0.18525056331568623, -0.784768780034783, -0.04298532914983355]
+]]></system-out>
+  </testcase>
+  <testcase name="test5384" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5385" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5386" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5387" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5388" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5389" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5390" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5391" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5392" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5393" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5394" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5395" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5396" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5397" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5398" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5399" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5400" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5401" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+]]></system-out>
+  </testcase>
+  <testcase name="test5402" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5403" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5404" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5405" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5406" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5407" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5408" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5409" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5410" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5411" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[35.0, 0.0]
+[0.0, 364.0054944640259]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5412" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[365.8209944768069, 0.0]
+[0.0, 146.4308710620817]
+]]></system-out>
+  </testcase>
+  <testcase name="test5413" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5414" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5415" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5416" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5417" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5418" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5419" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5420" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5421" classname="com.operations.Matrix.RegressionTest10" time="0.001"/>
+  <testcase name="test5422" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5423" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5424" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.984807753012208, -0.17364817766693033]
+[0.17364817766693033, -9.015192246987793]
+]]></system-out>
+  </testcase>
+  <testcase name="test5425" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.984807753012207, 97.17364817766693]
+[9.82635182233307, 97.9848077530122]
+]]></system-out>
+  </testcase>
+  <testcase name="test5426" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5427" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5428" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5429" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5430" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5431" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5432" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5433" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5434" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5435" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[146.4308710620817, 0.0]
+[0.0, 0.9998476951563913]
+]]></system-out>
+  </testcase>
+  <testcase name="test5436" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5437" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5438" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5439" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5440" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5441" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5442" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5443" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5444" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[260.95643973734866, 0.0]
+[0.0, 1.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5445" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5446" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5447" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5448" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5449" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5450" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5451" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5452" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5453" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5454" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5455" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 43.079766291379094]
+]]></system-out>
+  </testcase>
+  <testcase name="test5456" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+]]></system-out>
+  </testcase>
+  <testcase name="test5457" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5458" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5459" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5460" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5461" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5462" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5463" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5464" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5465" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5466" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5467" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5468" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5469" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5470" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5471" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5472" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5473" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5474" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5475" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5476" classname="com.operations.Matrix.RegressionTest10" time="0.001">
+    <system-out><![CDATA[[0.0]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test5477" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 0.17452406437283513]
+]]></system-out>
+  </testcase>
+  <testcase name="test5478" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5479" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5480" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5481" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5482" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5483" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5484" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5485" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5486" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5487" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5488" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-1.0, 0.0]
+[0.0, 146.4308710620817]
+]]></system-out>
+  </testcase>
+  <testcase name="test5489" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5490" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 3500.0]
+[0.0, 0.0]
+[0.0, 3500.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5491" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5492" classname="com.operations.Matrix.RegressionTest10" time="0.002">
+    <system-out><![CDATA[[81.69971696782378, 59.885495181469715, 46.124609209060765, 54.62475980524676, 97.80740184084021, 32.41596839407177, 97.53192619757812, 95.91084643716987, 96.40925440109719, 95.72158612492593, 59.00785526855998, 55.6312259858115, 51.9958781762745, 66.44088665818398, 39.88576198622073, 84.3964398453841, 76.87270419115256, 42.65878855874955, 57.71773908183176, 41.503862437455076, 79.25646261296944, 86.75548846021253, 32.34171196748677, 67.57319059360665, 82.59094506413753, 41.65754381868298, 64.75752450714066, 69.02972700476981, 71.24281777345081, 45.934121111582186, 74.38873912295327, 44.560082138900505, 32.72653994679156, 42.95094598927575, 44.10772957132788, 68.74700040529817, 98.22071267447161, 48.689005643528105, 58.82742162800708, 46.79694449372257, 61.37646783276066, 47.85459404309067, 92.51379511256565, 34.60622874571073, 72.28178858267984, 76.55180501280032, 40.14905487668489, 76.36841606892482, 98.93395044551205, 46.0581505005145, 57.476166019989975, 63.50778555472435, 54.68549435987754, 62.138446621574296, 66.28121853591102, 99.93069540421915, 74.86753074675406, 93.85171442005364, 66.52087429275647, 65.41868197818965, 61.157324154741644, 52.95031823417663, 80.77792331031142, 97.44419230589476, 46.245505875522376, 43.74011982215236, 69.32877115128458, 69.77184998198139, 71.97147636529067, 85.66496473278652, 79.53245032554467, 45.915217549986615, 49.33384268838746, 84.8983124473279, 47.301522248569526, 98.8510165686918, 86.64606520904903, 88.86941644743035, 43.091039862405395, 75.34982523043963, 32.59570837767375, 74.92091240518369, 46.14250257489833, 91.86429537367889, 80.07900737166963, 81.18927194267457, 66.6455185375851, 99.1229453905484, 42.42074383150575, 80.31908471008674, 88.03069953081487, 40.40964353819885, 73.95269429874772, 64.76664015772067, 38.78301913014871, 73.96592051057736, 33.91218536067937]
+[72.21785920491538, 36.96576937454139, 37.03525905458751, 78.2356085729897, 51.04010987322129, 73.07089076248258, 89.7755748769708, 56.05998322839227, 72.70700920267669, 51.862351972225284, 91.59810042606486, 82.60897416925141, 60.779825562907675, 57.554958194528, 50.447946111880675, 81.62802716758677, 92.29862072124948, 34.97178348418408, 63.12361244899867, 90.64658332378544, 93.33082899047648, 36.24921527406882, 83.93979319587717, 61.08360553644158, 99.94447329376037, 36.20932255494659, 71.86980297551958, 70.57592882145195, 77.01776536876568, 93.69512092803711, 48.76102292855701, 48.89723616193726, 80.06636676304615, 54.96502305394999, 73.29878536933143, 53.44874947910884, 33.664104828796624, 62.66857817785057, 57.10113345409024, 63.54096765686023, 44.052504403280665, 77.97637450772503, 80.6589289794124, 82.54913434803805, 95.17897750907234, 72.11276000398985, 75.79283554208156, 39.51331003238901, 84.67307944320682, 52.840829591163114, 91.88070954567351, 74.86729797337941, 95.16477250606971, 45.37487926193267, 83.31594467775254, 42.71888173891932, 34.86815050871723, 57.74635552452139, 85.48942871316295, 80.46714740809436, 39.498605582628954, 83.82504874227112, 34.044680839765185, 53.53094057014306, 77.36098801734813, 60.998127223841166, 59.23788696929054, 82.57578523771812, 56.840790169353994, 83.93533313688393, 53.941504991096295, 66.8648799900034, 64.54995931004842, 40.91947929249605, 34.16216043499967, 62.2230495544829, 79.02344239434082, 80.89714660358268, 84.90061852185414, 51.59084869139089, 85.13212188680131, 97.70526864639024, 99.76359470281182, 48.25923767026801, 62.27232579789674, 40.85509110479056, 47.94423795034383, 76.61360585121116, 70.91161229040047, 69.80573091567831, 49.02014538045212, 94.57912109327305, 81.21508217339198, 84.83538566619586, 48.47477770758621, 43.94773290600698, 62.24599240536553]
+[88.41900318774555, 72.9301952520839, 75.38038893171961, 52.62896584361414, 36.4469974367631, 95.78607408381545, 50.116336098263105, 47.58365236900714, 52.67039775423849, 57.29195491708415, 90.28463890218569, 86.88119285564309, 58.43359075119865, 50.03675935010461, 34.201354031262994, 77.54539791678133, 37.05657358827151, 73.42159353749044, 44.14904043989158, 34.0150583750198, 80.154460299957, 50.88892268012044, 39.87361410877658, 79.00336341001992, 55.73272922583891, 47.51321415364391, 43.396799727970055, 72.43491704312379, 87.07250837090247, 67.01518157770192, 55.7307343650658, 35.61035556940039, 73.22093388582893, 78.34379942693977, 71.69454557000572, 57.14316995238279, 96.32745810632572, 78.67727966304496, 47.27102317435849, 62.23276156264978, 80.11772100930881, 34.02624480240738, 76.80476642951568, 53.482391001190095, 87.472376418696, 42.579347189174854, 62.831488037822396, 53.74015534829613, 69.37909195748563, 67.51362876208712, 53.44142110713268, 79.33567599305513, 38.45166355072442, 97.19894774108103, 40.81807604546016, 33.6047060322329, 37.76101605105072, 35.55781334987027, 63.956844766291894, 87.73840246556604, 97.89861281484825, 55.79902671697696, 50.556277983176244, 32.76353987129176, 85.99358735629974, 38.825525145408996, 87.68808341761131, 82.85446689458696, 57.83068989811959, 39.32389669676811, 84.0902283085864, 46.1971500544388, 96.26694213311801, 33.87502456030707, 82.79077603956983, 75.27016040737652, 95.82062564145829, 38.38237985694566, 97.25839294130182, 87.67701349538203, 46.607075564725086, 88.69650299476973, 49.38870781952273, 75.55879271440575, 80.72147522572854, 86.52123595067596, 63.37402420873025, 40.13550724728656, 66.71966624402413, 82.51932231423643, 35.86716331880865, 70.06919448855373, 57.02375337942313, 91.99199347910607, 91.83845006779168, 36.11127212067747, 36.88005564932082]
+[47.58922149162996, 47.13820963230114, 75.89121955416749, 51.92277574163829, 92.2143181456893, 69.01536326432498, 79.72314296711909, 44.4474814581072, 55.61862767352219, 34.706017573940215, 48.95137762130349, 86.1743286611099, 80.13904280586483, 63.694225681333435, 86.62575622506861, 37.58171243831501, 64.61317878346827, 97.36036565114182, 48.191717407719224, 62.81679705835443, 64.71396919183923, 36.47089020791102, 39.39999117517503, 92.74020352467335, 90.77759745400695, 86.32643435298118, 55.78508125778181, 40.83786705865145, 92.65558943685991, 61.37360857714232, 40.83133270264441, 77.5338838614511, 67.2040340400078, 69.69903703496648, 94.33987491291782, 57.86394163578199, 43.72983615880993, 41.06250774587832, 64.52930542762947, 91.51971820471685, 60.0460078654339, 67.9893852991486, 75.04744669087884, 42.950379387946334, 48.74498936857394, 89.93068350574163, 35.34110195938854, 92.5081590251517, 33.8810588831667, 73.61253768558073, 51.72523340771271, 37.5506901260204, 84.45986872194501, 56.43502784310783, 73.01251713721084, 56.963623118234686, 74.96526068545916, 92.14364426641879, 76.70877895242336, 75.74281006156102, 36.61043583404557, 72.98492607143018, 69.5493277329561, 68.07609739684933, 94.08269539195555, 96.17111619973635, 95.54574890336366, 43.790592807916894, 43.25792048248697, 94.716929614225, 99.7322350512395, 82.08202439223352, 87.6930226071839, 71.57483942065844, 62.445081041189674, 60.11860402373142, 63.661623283412894, 77.48354299528208, 53.238494196286275, 92.41257264496092, 81.08026982635131, 81.05756811320128, 67.43438146815441, 97.77840505622346, 82.87947674836334, 82.38425371319468, 89.82336010747406, 68.24743085916813, 50.20597597470872, 82.7576166337827, 79.17869757569869, 36.48438858819805, 67.29953909160228, 87.16691569160166, 68.01447869234242, 81.05224062786596, 67.96979772693399]
+[74.7709708372452, 80.41380138217264, 56.29733492707014, 95.30550421576426, 49.82762055527034, 58.77233137358988, 97.67779494984057, 53.580712824996944, 65.4109471025069, 97.94708965731064, 78.03379297765113, 84.27937843340715, 38.73718616907406, 60.56987303154642, 91.59913811820218, 84.74194270694198, 66.03353875434297, 54.1792358752122, 32.47941653902063, 48.1444352174982, 56.6223698381001, 41.34449141758111, 52.872667349194096, 73.35273119824987, 48.25654220700944, 64.09973334401735, 37.484383779288265, 68.65158283259622, 86.7299584047185, 89.77539812820348, 38.38939959649138, 70.43007979271644, 96.40062127187305, 50.709421489673375, 55.019015836023506, 64.6122617127916, 90.50182997486093, 67.33958377507386, 81.00247909426758, 34.953582860822735, 50.980408541072265, 84.82314933452642, 45.267729995750386, 72.28100390496971, 43.089130896468376, 73.59946821289984, 65.10710275352444, 94.3364932042642, 64.07379671633869, 84.20569398674829, 87.83945099987707, 67.0907699235405, 42.03370274687608, 62.17536275461022, 33.25094756783437, 97.22612025681526, 36.39751220869074, 39.99404613025513, 93.172591105123, 73.94419888167673, 65.4448446885543, 89.85587067602825, 45.3532401683085, 64.33670401618377, 70.91712337148954, 51.35920515646262, 36.2127492977057, 38.263889778400724, 60.99958800105, 46.29934851246984, 89.11060892092259, 32.01788676597172, 82.81958734527676, 78.36059744745317, 97.44122863664207, 35.004841193690936, 44.09456662862973, 40.77957015531241, 81.16780854870467, 44.26190490017779, 54.676487370244985, 87.94625082574944, 45.33251857894989, 49.83217183070376, 36.47762559334456, 55.428685345951834, 83.63148047069363, 45.85262341599766, 62.62604883893638, 61.051840200187954, 67.31884784841765, 79.66725777015264, 33.68729519065226, 75.43063838724862, 61.50503630697527, 58.359542986949926, 32.402095571170335]
+[93.75173995628484, 37.33995014097286, 92.80539114355865, 70.62825103181981, 87.61813816324133, 87.6228333147389, 85.67990268872282, 85.03804623650404, 94.41520166706371, 73.05615684118854, 85.80810470328521, 63.6108832904862, 35.9263153954991, 82.66172059179024, 96.83200676985145, 37.07408454105514, 91.82078000675054, 84.80294536369165, 83.3732766222216, 76.18309977736376, 43.15621041075775, 98.80811214647676, 42.70288891347039, 37.0956340089987, 78.18214621552441, 47.36506286704761, 80.3861453084829, 41.082497853166274, 69.50118124401838, 64.65870164186383, 84.45345504823838, 53.431253243185964, 96.03838717239468, 90.64836459331403, 78.3543561675831, 95.63701713775498, 99.28938903101928, 33.932952114341596, 72.28421967459856, 92.83807286904687, 70.96194918333254, 66.32747492812922, 45.43016959080988, 52.94219839944052, 60.39546824664173, 93.57545875539809, 50.264758018809964, 55.002923991069, 65.03732302180958, 32.54740486149471, 54.22294551594403, 84.14319858039303, 57.77451087798885, 55.82634896174664, 43.93001583280644, 48.68724643444875, 79.06360247697901, 55.75725167649911, 52.60504042536576, 80.14963921134787, 91.57149286091729, 95.83782128901954, 56.34657128714714, 40.34393318752077, 44.43405702428636, 57.754101880155346, 99.71424074056173, 74.11146502345156, 79.25925717621536, 45.41493837018639, 59.35201357389125, 35.03421603666397, 50.64582706169005, 45.015260670401396, 80.35584669257756, 42.98389862330654, 66.25820270642656, 34.45882863105454, 55.670529120185094, 34.472732090187534, 55.39285851422336, 54.39694871237626, 36.00755038636922, 75.50964220044605, 50.49076842417752, 88.69039717146518, 32.60783013766459, 54.02888682232448, 41.19523439410729, 50.27756570596553, 91.6302044062164, 74.94643290551608, 87.32386758604328, 49.232682912160676, 53.028569605606805, 89.51263357489601, 35.51799732036941]
+[93.22366101108912, 62.48764747892784, 85.86808716257211, 66.3523893679807, 40.62998010831825, 66.31933738841457, 77.57281301294611, 40.33259677312279, 97.25674374429155, 66.17866479634077, 39.36715727287032, 64.47687955200698, 98.88185575669173, 59.04038006544954, 46.53615980592218, 70.07409409769981, 73.79903765498315, 82.08424900720539, 39.98732594741088, 88.72854151220939, 36.07017947743788, 93.96917514520077, 59.515112431109344, 37.94724231469235, 77.37632079448491, 89.43325822561675, 90.71365148618386, 79.29468177575072, 91.15730499716099, 75.2389642438429, 44.612539957207325, 63.5345702046166, 37.155970992049205, 52.18961325402984, 73.34881811982582, 40.19770948866895, 77.53350410842869, 46.275388566158504, 32.05152221139668, 91.65958519005662, 83.39833739206941, 55.964154180075575, 70.603480419582, 46.08083078123835, 58.89181503106914, 76.23434494814421, 43.05830985377099, 41.458242216386836, 90.8995707193586, 35.154271693321185, 45.22885375808482, 94.55356104195695, 94.0083842650049, 99.64418300049877, 48.326567830914954, 89.6117723817088, 34.50403505990767, 41.51445911980609, 84.51965948578334, 62.550170256313656, 76.00647247280477, 90.95538035797355, 90.89105761095553, 96.69403219636838, 48.76441507834271, 50.360882788114836, 55.51556515282614, 42.15419708538724, 96.68221108130119, 88.7008059343542, 73.23885913866891, 58.586459623096445, 52.82766932466287, 85.61312533768975, 49.229226921314236, 56.34214430723287, 83.47025936823565, 76.96971173453059, 85.48627322042529, 81.91380233789462, 42.62492379253909, 33.876202116341815, 85.22906993797079, 76.09950497537454, 57.627483681404144, 88.89856160350533, 60.44951591698321, 99.45370588262773, 61.443450808720684, 98.76599058511776, 80.90494471715263, 53.362215198256244, 67.21276954502483, 97.88183695715841, 74.43734210743949, 34.473319549852036, 32.95886237395411]
+[75.68119263642163, 86.74474109382615, 41.23666820142499, 89.44110400662379, 95.20593851404736, 45.59371638865947, 51.94600919075936, 65.80560983781572, 64.22495099788786, 57.95014086078813, 81.95143472032854, 77.99005671154325, 89.80930431412064, 46.618653780948485, 75.6013413730798, 87.76396918517105, 84.47925229389125, 81.71959115639373, 35.99377524147116, 75.83677121975421, 54.87187368305304, 85.69536816322943, 78.76143973253079, 64.64157899132832, 92.33523945710931, 92.5266467855059, 86.88411599170267, 59.20360163839138, 66.93703110734656, 62.451834189384314, 89.9168288006256, 35.92770272400615, 70.08255744915132, 96.72179444493679, 89.04156355395503, 79.19052179051612, 84.26913384029189, 78.78490618205882, 94.99492846908547, 32.29831132763367, 89.46085042291392, 40.78589031699244, 91.19363760879408, 60.672413115074946, 52.14975973713179, 77.37510735518015, 35.27427941554412, 93.050119770142, 57.37655100478068, 38.56332957542585, 32.78328908050833, 63.03938638373083, 87.81582017731903, 41.72021715566309, 48.89766011759125, 74.54171553884218, 95.48807425629123, 57.803089906838615, 95.82638166718402, 56.35823785650032, 38.742617321949034, 36.51578476809986, 32.93719553878375, 45.71987578086653, 73.86254027429433, 87.33574175322269, 83.67272075259118, 51.53317013653929, 36.97501336303657, 64.21068694675816, 67.96459835473155, 43.80922576731311, 99.90716484110314, 55.21459017745932, 91.12378184071639, 80.04391431741364, 85.20981786460897, 70.5658678448332, 68.07966357510527, 88.24335006911565, 40.77842333800609, 77.14903751098996, 55.3602524024965, 79.83935885786298, 59.332519814487355, 41.044369379128206, 96.35013564417508, 75.91548227188585, 50.472129866849215, 67.55831496637379, 78.1325083705804, 32.964834443380546, 33.11148517927349, 78.86079132002746, 82.61607546204128, 81.82690032357439, 77.79754439263534]
+[74.57369922583894, 94.66715589077609, 37.501152670025604, 99.75276330051608, 32.518293191412795, 77.61186616810552, 42.21115080900029, 88.43864326554296, 65.31734141632312, 65.74277121871842, 81.39354730315168, 38.01859607268219, 93.66127767702686, 86.35895523721408, 58.212232791570884, 99.30567049506544, 80.78582802858742, 50.38794251852181, 50.748625572617016, 71.6127899600103, 63.07187217768981, 36.78248844912466, 59.19485792992954, 92.38009044212825, 64.66660980377002, 77.65475607810387, 46.1774696442899, 43.5360483393469, 99.63832643037475, 48.504929735252105, 97.76490991026049, 96.25609122017252, 47.41541054537147, 92.92085450999973, 77.76300028917002, 56.114404467103455, 72.1234686721622, 95.76982600982066, 49.5782528335543, 60.581724512938166, 91.92275137339865, 67.17317145439158, 62.22973630362544, 68.40386826325965, 90.561323567534, 79.44880946945965, 92.01596954748696, 49.602848832316724, 36.097709978251295, 34.7264911253926, 42.89406626182189, 39.67442771718928, 51.110048061292844, 48.084981775825554, 88.80420134771296, 74.0129654704837, 36.697040764928225, 45.8299377239487, 93.973171726878, 48.67651861487378, 57.18927368302292, 52.92580249701647, 36.656680677655025, 53.312095424019546, 79.7277830447292, 37.61454255175803, 67.83070482255718, 39.39308160678255, 60.72999778611196, 90.89860545014324, 75.01809734658254, 77.8778113695638, 39.75147759199531, 51.83498726325829, 40.7373760111329, 84.98035426083007, 76.36516341783766, 62.48185468139425, 72.98641877351133, 68.95155928944544, 51.418121256261344, 88.8586655170477, 85.72454433980865, 38.60049432091231, 94.38902723918288, 96.42529868408238, 48.492296163846014, 59.743377240520736, 89.55798450711808, 60.355195408634756, 58.108955361900406, 40.84918840174569, 59.313448604569324, 46.27210469928151, 39.81366446031049, 93.85815650409086, 51.15941501584499]
+[48.139473775295, 96.26674990017138, 38.481339807313844, 93.84923620485635, 40.6361362592967, 38.503684694190575, 46.246561223001414, 85.56074657807693, 73.62144072633322, 41.23485896679711, 90.13799325012155, 77.14066055845996, 42.18747659079389, 65.81013100540017, 96.88371781895135, 52.184453200668, 95.31565004928453, 75.71792371317487, 55.77759370503765, 83.0812733136938, 59.29932101331445, 83.66436741091843, 88.37883437374802, 62.141657017587335, 84.86377990050758, 72.0788501510211, 71.51471741598644, 73.53914215382696, 87.30939009402996, 60.318017096749074, 95.71883644220105, 65.03513036464929, 49.02320425603784, 51.89114005116827, 32.56941130050947, 46.31964277459981, 97.34894970978041, 51.70547893909915, 65.34916073473156, 63.28889915799434, 86.07475902451492, 96.63110522830735, 64.0302336795435, 86.69391317921608, 67.69259737684365, 40.61038035066254, 69.79484633453445, 37.332592465878605, 38.10282481797001, 38.08810611144794, 32.13415030981811, 60.321121386702885, 69.5819177185818, 40.714124704181955, 89.02502283629345, 41.96864896516466, 85.60083951006888, 90.07092839465548, 41.766408537948394, 62.39264521234347, 96.47614363263608, 37.604636108440666, 82.7639315248104, 67.25050642641058, 43.8553833498153, 63.98843613464011, 74.8834913697595, 34.82630862976104, 90.68294274691851, 35.82343901663885, 46.95160785899877, 90.19990771772675, 33.56195330678652, 63.88260141049065, 69.56230315236894, 40.33878603934574, 94.3224581264798, 90.02918912157185, 36.557346687058086, 80.69144288498401, 47.125547630408064, 65.4920656312312, 56.37870132855047, 47.22430426005793, 60.57771724746756, 79.35578440469428, 85.94907795163947, 81.83245218567153, 97.09919097860544, 84.92434425920182, 53.818489989502304, 67.6677794079135, 34.184557959193846, 89.0431834329161, 43.02176975106403, 94.16640608751159, 66.21352667137444]
+[75.51478190419013, 53.4240185639938, 81.42049466612875, 67.11417278453922, 36.4190521706223, 98.2879981681122, 54.02791497430108, 95.45059679845728, 68.45042174018182, 34.379499850094994, 77.66644141768559, 68.40139748093571, 51.30936994723915, 87.1337850266216, 77.37746177131044, 51.61493825658486, 69.736878467275, 32.23816387557077, 88.907485982277, 76.07189435618551, 77.95610824824597, 80.44286983930448, 69.44399250032768, 32.855109872437986, 59.08635597185003, 99.49439675126791, 39.69543123124793, 96.12131826339652, 38.52012158282659, 35.79248113561894, 61.50351117382408, 79.58880047228566, 45.30493893205825, 80.7039652977532, 66.03915001503677, 98.49962944855794, 79.24735852302564, 38.423799271718295, 69.12176692085728, 63.28461126895549, 81.75727064327131, 93.85546799665957, 74.31487335599817, 97.05364066839724, 97.37654584686918, 94.19017743123165, 51.18918532722248, 62.55365685405999, 94.48674783047284, 42.69612672626432, 45.50779362200985, 53.38095109933364, 75.86643006825963, 85.68628505372834, 90.07616481403417, 57.004109071142366, 72.5693634678947, 37.71505324644326, 91.61308235284676, 41.548377253946356, 50.020744991928325, 43.761279410859316, 46.23685406584558, 98.3118062721676, 99.27931469361388, 84.48710742572226, 36.02445914266974, 39.628020759785414, 43.088993122731914, 87.61913562218308, 65.58953690552266, 94.96004362015154, 59.644502279656784, 67.08048066893048, 74.73843303610994, 91.00406953767737, 52.9211898086363, 83.70925957632983, 71.00177051870932, 64.10168568601426, 32.97004330508241, 51.23112711121104, 80.20234625498234, 99.40349604640953, 52.75468986496158, 42.61050847647733, 58.20836036074454, 88.9967154825324, 83.90793919841505, 64.98715222483793, 90.63433816663397, 34.60374558446851, 54.211214654223355, 46.11175006210533, 41.49034146092397, 53.47835155732618, 86.65099901140013]
+[95.5263112963241, 56.64336083087789, 50.770551463824034, 93.58220696873613, 77.69207154673595, 75.44306516279048, 57.90084779439549, 97.82916059709362, 37.849723873793366, 61.97736555643761, 36.379011084232154, 87.48065144925378, 78.60377894977717, 48.16151491115336, 58.02211007933826, 42.6863282999192, 96.05493384332435, 76.22778825737637, 35.671027804761295, 64.9374600216415, 92.76130039537435, 46.170995215434644, 73.27425815703116, 80.11585513815882, 46.891438966620754, 82.3184646931437, 74.60226226716537, 76.02057680395711, 40.63912240367837, 68.4312986543813, 83.87524505140848, 37.13278656659233, 76.30181599224017, 78.60708767689046, 49.23170769395764, 46.054905512412354, 39.38188743998074, 59.74248339903377, 45.23467098899036, 60.36100646573863, 68.65156973249077, 84.42733784232371, 79.50701812326454, 65.52119000653654, 95.32977414753202, 94.88039702399797, 57.106901662598645, 93.11339383254325, 93.35082664519385, 90.89981879941362, 48.39871474274241, 58.71198190702154, 52.16228396973824, 85.79005121873973, 61.94464550929341, 87.64311815297754, 90.57099067299251, 51.83991458995775, 55.33638763192789, 35.222809207467456, 82.86355913402828, 33.16498671542512, 95.90606893396037, 91.14421790279746, 38.75951481097077, 94.59068963388572, 61.90003580768722, 37.356673227195046, 58.7123653292371, 92.74074773757067, 92.96862897791638, 41.07955114568739, 67.6558701838601, 59.608971876086486, 84.71964920286905, 69.52000454544674, 89.49985138281062, 83.63059971299262, 95.60269983076613, 74.41428344725537, 65.51187674302685, 78.63272564537512, 63.53617395290736, 40.688195637992294, 58.17822078959544, 55.03159587605319, 42.458144819705645, 64.33300055418681, 46.21949712345735, 42.25786050841534, 45.37697323335048, 40.01884338965853, 70.14343297155389, 76.62914423507485, 88.51695941853538, 39.01860244415223, 43.04923091904161]
+[40.75257199078604, 50.79892147658648, 58.69081261748569, 82.35506760024879, 87.0281749568863, 50.16508979310682, 94.07108494143634, 80.7022256089174, 70.93737311399485, 93.15224775721717, 56.04726847057494, 54.49646732824124, 39.53904596510513, 52.63658535703166, 59.14433358559715, 46.379233793583296, 38.95891414054543, 90.81825857475869, 61.12077212222658, 77.37829378116407, 57.64632074896613, 54.28317110871656, 80.37906887968842, 45.5695436129718, 85.78572667708488, 41.374052276644875, 85.61859927314174, 86.78860759685907, 57.48851412822329, 87.12239265051828, 33.210057979204116, 77.26300541887758, 55.2540244858622, 95.63737713570869, 49.44637030825259, 79.99262002932767, 79.676964796269, 78.11745563248563, 49.12571016278065, 56.28827296106105, 69.49166827607378, 50.54472961929417, 72.84815517243044, 69.08521626445398, 73.78193190691707, 36.641874523521494, 36.958196984428646, 71.48039786524609, 45.54843847803481, 40.81583321146624, 78.24114130099707, 42.39939137893671, 71.81407300707426, 50.582058025465955, 40.282220021364736, 37.38089008929772, 84.06071871199745, 78.35761509768935, 41.82301297774388, 86.17372188816552, 72.0293757554128, 94.53096376531562, 93.50053418564883, 90.17337350964871, 73.77874864709935, 49.36081752696589, 76.03016744106628, 87.68199202898049, 59.385737713950704, 78.52594198148785, 92.19437028591581, 35.5579670566425, 68.78452717676589, 96.04235761432938, 84.92487507311978, 90.0281002562478, 61.97925398666482, 38.783889186636884, 74.31687848667318, 49.267510924711274, 88.22853321892086, 34.98655871941688, 43.58952368515041, 73.80938485813016, 91.78838014015147, 48.88684925531261, 33.80770544644559, 87.9287535835119, 45.413358746594824, 85.03839401590824, 65.60607399284555, 65.85147035692933, 39.054075271373264, 58.87117126626076, 37.20684552789816, 40.97164698110977, 54.05239653195137]
+[94.70184461533836, 51.69883437657052, 64.21777816013446, 82.62406884545109, 90.67336002773672, 70.84588747409077, 87.28986110557781, 84.53170102137636, 51.99652552605651, 89.61869975271868, 33.696823900772586, 87.58934046271642, 79.38574432145597, 83.19476502570821, 57.35562932469792, 68.00314810554698, 52.72567218468896, 72.34696721079618, 38.9704130134078, 82.54098809626998, 94.7750719416606, 91.94216783154218, 86.49209089383538, 67.13700865564977, 96.10864033423971, 78.69685145697085, 55.665880796940456, 49.77555926671664, 62.517191523049064, 38.38770947436233, 34.006202027154245, 81.36209452123062, 93.73102465217221, 85.39084159715715, 36.495480910961376, 66.77700802933624, 93.60090034231948, 40.72398413911746, 55.885383442163075, 91.42155284960569, 86.76554028973601, 44.69200456798485, 78.68606298377777, 86.30338719848396, 99.35412366010779, 82.78665586307585, 43.761011744162005, 81.07247096879289, 71.41676816612573, 86.66737117568876, 79.90215898468978, 87.40639055372918, 38.54552049389492, 95.85067389688504, 79.84187949622448, 62.757412784806306, 73.54291071193364, 78.16152575709145, 54.86560029297367, 54.711900556719634, 52.01466466956147, 48.05076571575191, 62.52074806038785, 83.07598155222269, 42.40767562458633, 99.55852680984495, 57.874785622789986, 76.28962237843403, 97.28391073470911, 81.00432299522117, 74.35712565527811, 64.88458417928655, 34.5154024119393, 85.41028619241658, 33.42675264148103, 51.43998155130806, 72.60507078265047, 70.21479510607116, 89.13939522248248, 39.85247216752317, 87.48257917844936, 88.00952258827674, 70.1451374690728, 80.72636047286254, 76.8940406486369, 42.83373736109204, 79.72939465516598, 50.302215601465676, 84.89884669771678, 55.985422407808514, 54.21717337652745, 43.580836382773526, 61.00647670189186, 47.35961995539445, 41.392619072159036, 36.16273139265775, 66.1306417855725]
+[77.00013243526772, 47.542852895080244, 81.81152086534794, 46.807675374284834, 58.85153318030549, 74.3171238789572, 39.86297000967183, 92.02058765693144, 78.62420472832613, 80.79937070936192, 52.33964070056778, 67.48976019568991, 44.235902452092155, 74.02427853991999, 58.99441685642876, 86.43575744197366, 38.46912466384022, 40.623969013442974, 41.494476834769145, 87.5893056780877, 57.284359374998544, 91.37449590730239, 49.57050695752399, 90.6179504631616, 71.6550421307384, 75.11832448799856, 38.19429774764325, 42.15853676329945, 45.840866674012766, 60.871052073282584, 55.71109543358067, 92.28907958348395, 52.691831190634566, 54.8775889515803, 76.34139030735935, 83.5432032846829, 90.87624169693149, 60.96513020349005, 50.58009306476379, 36.46482493325801, 77.8516078332116, 43.74720916492772, 65.75933908304145, 53.220280823665846, 45.94820621286752, 43.06520483811612, 42.40441803834661, 97.92965992547354, 99.11082861378485, 78.51066671975602, 44.00066277943374, 69.14860298448104, 78.64505400962278, 90.9539036655876, 64.4023422734556, 88.32637598855948, 69.74009118721813, 89.71124170545528, 34.352934950930226, 56.085563801991455, 96.59112025405452, 45.31546477480403, 92.44942141684595, 83.81323675189078, 54.61976104552079, 64.8109314589876, 72.37151944530171, 75.32300594539868, 69.59211017301172, 65.07690359214251, 87.31006917045192, 92.24188355316213, 47.35956827207498, 95.8896671026572, 96.2670401347033, 63.29542380657332, 80.49846949905134, 42.26604044079676, 35.2629493387407, 63.80912249630556, 69.30026771481337, 39.087918137242404, 93.4757108245399, 53.51361081506617, 42.36488413024073, 88.0894892493886, 81.94828020145863, 70.1357022630921, 54.47551196433058, 93.99585262049871, 96.74065655048153, 69.27686233615705, 56.484053450294425, 40.93374365487354, 55.26519673462731, 85.72523469259215, 61.612054351304415]
+[92.19213458565069, 48.032341514776235, 47.616874133429405, 90.87285566336038, 43.992490918407675, 70.14727896464464, 46.75635061253175, 79.24640956371243, 61.13552167012693, 41.63622929911857, 35.92645636509859, 55.78902780420616, 41.22325899418988, 49.044387418592564, 63.161244456637796, 67.03608251190644, 90.61235828842152, 46.735821510229535, 35.726183336642215, 77.85648435115405, 69.33654084921199, 88.93890939585147, 64.94371889767041, 77.34351786736534, 61.9431075603965, 62.819158444329105, 41.022106578552716, 43.37742294112957, 44.52051910631283, 86.72456969011007, 84.68985009866915, 46.17087330359655, 89.15104215424344, 46.23695173871285, 87.70766616430535, 82.40929399670055, 71.60450420346078, 43.77590492711533, 83.22441166400353, 83.52373897327699, 90.2962215495946, 51.24044323604271, 79.46290402530641, 78.18481468275819, 76.36421876781037, 39.53653944142725, 78.36617333299955, 70.28195742069161, 52.17786220073591, 93.82712507143964, 56.60412583062269, 43.453103496078185, 94.67206115639786, 36.95438465629991, 61.7352038848614, 37.65562137264646, 52.60826509009428, 79.7224501661119, 95.33712278784932, 94.32010019958938, 53.19544894373378, 39.59188823724544, 89.56529176446261, 34.304430458806806, 73.46137523366417, 86.82565243178306, 61.86708726692997, 61.166363110411694, 69.34640013349171, 49.23945650332067, 66.47463366994435, 39.19848278471906, 62.69915232109102, 85.44780029661922, 74.81833714976287, 85.22040085389881, 71.18544932807524, 37.860174846774804, 50.14788181291902, 87.29865049017947, 40.57881742592604, 32.67022058930132, 98.41698432732517, 98.3656280595499, 70.98303788760168, 96.69395521813216, 85.88270870508742, 44.13466537351691, 62.244165608199296, 70.15139257988628, 97.8896668069043, 44.75910363094418, 63.14150013741856, 58.349225801198116, 92.95399082149716, 46.359036862560615, 69.90401086474415]
+[95.71047099960057, 97.53146515862406, 67.84015373154986, 98.18076793658902, 80.71030257449141, 69.7487461821947, 58.35490966719894, 92.80093146392184, 36.015536318291964, 42.89614454935154, 39.307013293226575, 81.49092529261219, 94.48855433711459, 85.62494696143867, 71.9760234188193, 46.173409985351206, 56.704703236510916, 65.56182130767522, 67.63961504116511, 86.55472874850123, 45.245494309252585, 88.4473365931926, 45.49685579292172, 97.41452140874719, 99.26822569546657, 65.92520793402716, 36.746635016749465, 85.34322978724083, 89.71591444506636, 49.75337298870382, 54.851114966672476, 68.63026407911246, 55.01970352321575, 62.47754208595288, 50.314946390861344, 55.587605353596125, 59.25920722087979, 34.50242480168963, 59.236669494003635, 33.800683345909725, 67.4845285136898, 53.01532254759372, 70.43957889640396, 81.63035553707202, 36.26696722437113, 71.3613408370189, 60.16507486371164, 69.74690448895655, 63.53369785569457, 54.23899773790396, 48.11232199329971, 82.5589446242654, 98.35503402677008, 56.47952511144464, 90.03379343603187, 61.10719078382505, 78.5911018034802, 51.19271304756489, 92.14709999974642, 42.32506634990642, 90.16807828992181, 76.70664323530971, 95.29924422436585, 68.525166118265, 34.242434278234555, 80.99824381345715, 36.120238557326296, 69.55260398179786, 95.62485256570015, 59.206063745331015, 68.32882025543586, 86.25332155890902, 91.5738337987363, 80.33624707254612, 91.90374711727581, 39.73745745607681, 56.43225180398723, 51.41719805534541, 51.009971976582435, 72.37492248100169, 68.56838671141894, 95.12795333100726, 79.36974441510277, 85.54232491711096, 59.69629641383022, 72.31982897585661, 58.194501029793166, 63.847460485745955, 98.88861481062668, 39.87041882445942, 42.84415111421939, 89.88959010623506, 46.45816313505317, 56.95356867048966, 54.05618565995452, 69.5707530387427, 34.37307982595247]
+[47.07847115784063, 49.88777810569613, 93.5554257524162, 89.9833801114107, 93.14556893175865, 63.43986130469645, 63.68282948108232, 74.57521825456865, 84.28646728087642, 44.98292704521283, 77.96824566339293, 97.632340301012, 78.3996119782671, 41.28007611340328, 78.28672914534108, 91.6725456017532, 49.06299314119866, 35.70363921390408, 48.914624283247875, 51.140221749930376, 49.89969604287553, 92.16745963530546, 71.81133148238021, 32.07433185481415, 73.4916224511463, 89.94770979081491, 71.8558159083195, 81.13446329169278, 77.58125661994275, 85.14091277151743, 82.20933835816602, 53.05590599927619, 38.57087454973538, 47.808588931118756, 62.557985741099415, 96.71791409029355, 55.22313004158295, 37.78376179069187, 35.1955421057755, 89.74768481621838, 35.986474103284635, 92.6653115631484, 37.73930574623954, 67.94578076409243, 81.51340177096392, 76.70198095667894, 90.72851114451316, 60.807070090361236, 63.70906123905526, 79.06856159256789, 51.43699354347028, 36.024501147670335, 32.04225469545946, 90.46263822056889, 47.93879685957444, 34.10132618689494, 46.870459415146435, 88.00100381386486, 79.79747111360973, 99.06066285596837, 68.17494004874133, 92.07064674000924, 85.70679912721596, 98.72957047393896, 68.37163999485516, 73.09001302954704, 65.9927392848468, 94.18809621442324, 37.758008030121836, 81.06199542383506, 33.09342913699176, 46.71200729428542, 98.67548930882336, 82.35091898467752, 81.96607941898534, 73.90127035885342, 91.61190605768749, 48.29154177154379, 92.82665775198629, 72.67451212470311, 95.23752578605223, 41.03889104409781, 36.710254767393664, 39.4231094028227, 96.76309134968452, 35.493522473270964, 42.04711795033275, 44.856707265883614, 67.02768256325669, 70.18759287268176, 77.78128593166446, 62.93535595631638, 68.36875513126805, 42.692882772179786, 71.51585820181867, 85.77165140713038, 56.59626515567899]
+[88.41272952605078, 61.75095212651092, 43.49961459928107, 51.287310734109816, 69.54557144205032, 49.48737124523244, 49.84526363665323, 77.13724266319022, 45.55861366561709, 90.30114689032825, 58.49718587476052, 75.24775555196308, 49.68590390189937, 65.45104021116649, 58.3636047482089, 59.00196334913787, 45.76586773235112, 45.66319282347506, 45.41583100477028, 76.57103328106658, 66.15914994656703, 93.9441189563387, 53.05615110749502, 81.11644546617593, 42.53840551224263, 88.10525767896932, 81.81158549323627, 36.396522114309576, 97.01742581632415, 35.63936170225514, 86.64317430288784, 91.75534683252312, 97.38779523530685, 83.17099107819865, 32.27373800708416, 58.36677886451634, 53.15706076370301, 49.910447722726246, 93.67536235057062, 40.12575947312976, 34.63314308134965, 91.3725044174, 68.22111752513928, 57.723657086180246, 71.47553759954508, 90.07830148051451, 77.99380023839858, 65.2139353623968, 61.93462203312, 58.04082793005276, 47.35780261272664, 42.768928664365845, 91.42613836522783, 85.54145345098624, 38.13843291255985, 65.34808502317199, 67.13876924423954, 54.036952778396326, 40.61637402613299, 82.64253048658577, 72.0484174118416, 55.993562805264396, 57.03314622376057, 96.93035552530603, 79.01367128950332, 55.026602778644644, 95.41684629031823, 92.37156515973129, 47.55263556647563, 71.93121324590965, 47.275578297564294, 75.79113217169154, 44.452167051254904, 32.021850219422, 61.06939996067764, 59.14317586794487, 52.5362670269551, 60.655124953124414, 88.3597973522532, 59.6187688951488, 83.72120331525366, 54.89269960577432, 47.149029440023334, 58.75442990654792, 32.91071823822272, 85.96789545442542, 65.15995994876005, 94.91790128023135, 90.33543584505527, 59.551769494103695, 62.67024680724735, 40.19231730864608, 79.61637292490406, 46.771401736350555, 54.003089242514434, 56.949424434538926, 75.13325407267936]
+[34.51519067734631, 52.88996007531129, 53.29701480534909, 47.20409392037902, 68.76698097090076, 63.65907962216015, 64.1053093825505, 87.13329532269273, 39.542859498612685, 71.56664049641103, 47.461516976472325, 84.36130153993285, 92.461529774875, 67.57606983818471, 93.17134273976203, 56.74961404149489, 98.06115087334432, 71.50392925024892, 86.32077216666991, 84.46076268478555, 33.682618602580334, 56.68929657945219, 90.93093446169178, 59.94362109296421, 90.07123233140311, 37.20677837432245, 72.38344782264338, 93.21020586481771, 73.80578702868863, 63.131568067482604, 58.56312148989339, 90.89091147477971, 61.24610544464535, 44.47827272568488, 64.55944914710949, 55.480892780315195, 41.89710182917716, 54.17346405343522, 78.28787611813625, 79.7411051427268, 88.9194728870408, 52.78525265842194, 44.5363020459054, 88.39326925014319, 63.97413601753204, 88.72140634739415, 64.71186361999656, 93.04884108279954, 86.66960258380223, 69.22085532784945, 44.9575551689232, 36.737821566916324, 47.588472529649806, 57.70170271843713, 60.32775644110018, 59.454030572747385, 82.20126743764651, 47.89210595838384, 73.35630036854351, 75.80926461305188, 74.93287906190793, 46.658722987630924, 75.62023683127327, 80.18950622640222, 92.22891334299169, 61.56068255912518, 98.79694459076316, 63.73218123195979, 54.67624812968916, 63.895286340378604, 55.23183017796639, 88.99418644169975, 95.06417096089311, 75.3649879573016, 45.17835734802057, 54.356244761290526, 59.729459490260126, 70.48343235952814, 92.64165177217821, 91.0098862726968, 74.61084319330448, 97.45163287467517, 92.15152830883265, 46.79914979552869, 75.14527166327554, 41.47366240525977, 80.81024017325285, 51.23989282658009, 58.47048230954847, 70.34447252992959, 37.604842434144004, 56.71535927279814, 73.35536878780037, 76.63080003110602, 43.243566490090465, 84.1474346860497, 89.86168917022226]
+[39.879322277636845, 96.67011479509416, 47.36882689801156, 58.94769437445615, 52.024589993688, 94.92936994636801, 48.972164977991106, 90.05626015413041, 67.53246487509413, 89.20249098218542, 91.58778526484834, 82.18718957871198, 88.8031485741187, 87.59891867346036, 52.34279518841123, 61.035304607320725, 48.97108755361546, 36.68736587998615, 64.67973892975415, 33.48307110040331, 72.47741060727068, 98.767350658414, 44.76398971840234, 75.06845183350205, 94.6537579390924, 38.527417091201855, 89.38479789135974, 68.00575974918566, 77.0446844169401, 85.00568517779193, 46.55565270807501, 58.91929425697512, 37.3090937175115, 34.66289109170394, 46.945455770388136, 78.65659630092458, 97.27943826760696, 96.89766927089256, 39.82273688216337, 77.38015487234745, 48.12070317195564, 78.47827335847279, 89.37095472976102, 52.59346429760062, 93.51945638271616, 90.13455110307947, 76.03369429153622, 69.83934334454482, 76.4465752988322, 60.948453700152385, 92.97435105612388, 35.51544881613787, 78.27547446091285, 84.20091994739025, 77.78568907816691, 50.58399647298269, 60.901004229447636, 87.97751955209176, 90.26041280307112, 76.90964832553786, 58.992431220238515, 77.10473250033283, 54.334710883456395, 32.54165269086541, 88.62719373310523, 77.88330721123111, 62.24247304344119, 70.46327625731954, 76.29045046147684, 93.60466475339791, 39.46869838803314, 39.16365074044185, 36.58865033990102, 86.98082300048927, 74.26636253137085, 32.844159782496604, 50.01369474041043, 81.38789140381427, 97.30181413612183, 42.15352296740424, 81.70751947226586, 32.21766484464971, 55.419546841396546, 89.05279015247532, 46.41519348747005, 66.65143253271478, 78.56797354629141, 87.74346476238779, 83.67795133793095, 80.81458309929454, 34.6035953317689, 61.54900929832697, 32.80579122429247, 45.54019739941151, 50.991781927661094, 75.2220389400496, 77.28264945344654]
+[69.86427615665923, 99.34810243951274, 73.35649971180536, 38.99532428870279, 56.894832148381596, 32.314978856898826, 96.41621735590316, 48.040718442660314, 75.84158044217611, 40.44419017431703, 56.348165849039745, 97.85416614460343, 82.76251293037004, 51.55652904254567, 85.83089676588956, 38.01493510083461, 54.978146779103454, 90.47571890510065, 84.91556242756572, 34.32326032771415, 52.12380187364042, 85.08447473782476, 64.14900997452213, 81.6065629152857, 96.45475412213685, 33.326325680187885, 72.22546951033232, 73.20075323847453, 36.288692714234756, 43.07769642806019, 98.79535357076188, 32.16584771249022, 59.36437239633908, 98.74041261518461, 35.266760121197684, 57.033373698224224, 61.41497112086552, 66.95566898869326, 74.26727001656334, 37.24631208934408, 33.399097577114176, 69.0162233351496, 43.89067092498102, 46.44067198661188, 68.60201500338282, 55.35437979896116, 61.9352896814244, 57.33096451302197, 88.2140986127333, 45.9091234188387, 74.04760398420089, 60.200243490850845, 93.01315730724211, 73.22650360681766, 56.016882240587535, 35.85856557245702, 37.421683619313825, 86.82320408595561, 70.42359697746036, 61.42206336403811, 70.47974012939214, 51.643969725152644, 35.42641137751797, 33.37807081236476, 96.16861431033071, 84.36935192707938, 64.67955898660057, 89.14005782979407, 57.03998316464769, 58.88105637940887, 36.2044548742936, 63.659361727823345, 64.24981307524322, 56.36788415826276, 76.4964401425917, 43.64903903707933, 99.8657897449325, 60.35611688164483, 72.22957237782366, 66.58840714911022, 55.711554684634116, 78.37390587923741, 85.6294003189955, 78.91512555596958, 35.03062006677061, 74.01007903745487, 98.91569660479713, 61.67497723423651, 32.89729463603668, 59.80348223090676, 40.174175054697756, 56.38776579209455, 48.57155132293451, 80.69983512678277, 95.59821760729103, 67.00102038059197, 43.88924587678635]
+[57.738777371307236, 87.24868717564206, 67.54151528897273, 66.29865686682626, 86.18465119905287, 87.31193130218401, 65.43785111175552, 87.29883615913255, 71.49026279186913, 73.29309672422883, 37.4756593573342, 66.80481247279172, 68.28371657013133, 79.66395279131368, 44.96025266457061, 41.35916232370289, 45.994142333401925, 98.19136755784037, 42.899829467465615, 97.12908968611539, 35.782962768180944, 33.50472463772559, 88.88563270639035, 43.27257731303173, 81.12309490371723, 48.41749002801055, 70.83372764244685, 79.52681038105104, 34.66927534911965, 91.10024646356521, 32.86635161341595, 89.76651759837392, 44.98848580279064, 63.409504471471834, 69.34908955593117, 58.79944430613294, 90.2702222557119, 58.50865046192696, 58.46335312716173, 94.81072860701352, 50.31214512417792, 98.37441172745254, 70.68201121176745, 60.63741917536798, 90.87742264764228, 89.86424665501406, 74.1292082070994, 93.44896898139594, 73.94585957883169, 95.72713010500222, 48.04375521657157, 40.42901849823996, 43.43168950275091, 48.27216907723661, 35.42872266873332, 93.69835784360635, 76.61668988930009, 50.36660984005266, 68.45817317525362, 78.98845139967122, 60.84805522423512, 67.01673100977763, 41.32520878573071, 47.46946362890462, 92.97624743446643, 86.99222241491523, 96.95386376708423, 46.65624783737548, 69.55882723326255, 91.78664020419436, 80.36055675281324, 88.46028092945807, 51.03205090568238, 72.6635676982096, 48.439195432714335, 82.22508930636036, 58.85277720876621, 77.62017158215531, 65.55723202664745, 45.97719543190041, 49.03907689551432, 72.80680867833229, 88.58830259030307, 54.14420057284214, 78.58859524804285, 83.27344986879882, 65.87032076217504, 48.63609098945059, 66.92966115135818, 51.870663069193874, 46.06621318961797, 64.4554414057815, 92.8607475680488, 66.71493812689558, 47.01774986825906, 36.89669232590664, 78.35983452341307]
+[92.8351884132262, 79.42119473676485, 60.914195983131535, 86.19584520895961, 86.44928008954466, 83.5168044067272, 32.3833019720034, 50.45025388574579, 46.77646006865877, 66.97246798554019, 39.74822376634121, 87.85764766734255, 66.3736150573631, 48.755067338769756, 36.94502543808902, 83.29982776575982, 56.69029339861055, 33.021414439303555, 94.50754874798676, 68.8388560379797, 66.86948133961077, 50.92391599548088, 83.40863157090062, 74.35017720186141, 84.77812322826259, 64.71438278172795, 59.45856353206152, 91.11777348749838, 49.83344980398719, 43.6426825441197, 92.97715577766044, 77.6790523368554, 57.3981609826492, 94.88523709942841, 76.97542971155173, 85.75799929155447, 46.349589835276326, 49.101614346797874, 95.22739255863308, 97.30082753448103, 82.88496233027288, 79.20576974720883, 35.381930230610145, 81.4292590840599, 88.70692294684176, 68.55176833506256, 91.65938249816786, 42.55219907309694, 78.44053435795195, 92.97209486703464, 56.69687292833695, 89.92750867174962, 33.46495671899829, 63.969943378794596, 84.75102343626399, 46.64121884335488, 63.3000892634923, 93.85516010401633, 82.73619537844542, 96.27242064889246, 99.27044670866998, 71.72679034592456, 63.47094086241202, 74.43777645116305, 80.37559436381153, 65.94347986452433, 93.02487883469294, 73.9603987650334, 36.12850585625342, 50.08621953721068, 93.2027315479254, 74.58366568597611, 85.58021577895607, 53.406255524891975, 56.97180467725212, 98.95122776065324, 95.83118218220348, 99.36423455315246, 63.03370988548099, 44.0003583951419, 93.03681116267416, 85.1049509777024, 99.76066876949476, 40.96649095764623, 54.24662480589999, 78.57531582375971, 88.36127449855931, 69.87260196540191, 65.37356630678798, 76.4815076697773, 86.41009269339753, 95.67789017139401, 33.17198897104201, 39.394472218822195, 67.77004536172144, 91.18597105186817, 75.30992136387749]
+[84.05127917157157, 89.45604676640295, 38.36356932632822, 86.45316616528265, 59.2630966353867, 38.132855049568654, 90.8965135676289, 57.73591140724878, 80.82882839429305, 94.70970810212035, 60.61059002102606, 88.07449660466466, 44.46674347344686, 64.88875398147155, 86.8105835763445, 52.48802806145915, 70.01471663848204, 36.543894456314064, 84.6416680243233, 48.921581075578, 91.01295629696058, 53.45114418492315, 54.253011740415644, 87.02474465475404, 79.27140580487132, 47.16116925539221, 42.844314388733736, 53.920297220932895, 36.13726713767677, 88.6991624333628, 66.60173687209291, 89.20483138562744, 70.91638420560096, 73.29678844057219, 91.0804754701148, 48.255183367462614, 46.265497258804615, 90.50543690747534, 72.76700921559114, 33.37156394362098, 92.36067023817503, 70.8095515933706, 81.3548342855289, 58.370272182072654, 92.26047728953071, 38.25334684868369, 39.69329762044897, 63.9459809550236, 56.12078966768894, 32.613748747812124, 84.41986699160068, 90.45553370767425, 55.78132516028849, 62.296918979989236, 48.96203909936811, 85.73228812055301, 51.73237014028621, 74.40528004755001, 97.89579512982246, 54.122033878474575, 51.583385057240264, 57.316457231312285, 89.57332999920666, 95.13855276297254, 68.89347147214943, 71.63509760221584, 84.48356035267392, 75.96894019998993, 91.58697545202662, 53.52307146277384, 53.984698798279446, 95.51579931771158, 68.16577355148674, 58.183075579641645, 73.8489354251158, 88.74549639957843, 69.5430590513935, 82.66518601724735, 53.48509876987973, 88.81864999108299, 60.56176015675857, 98.18546042146944, 78.7559027750795, 46.811099252676584, 42.12395587085909, 60.79019430226104, 97.98220530147174, 40.79060642662026, 78.34599772982892, 59.46899759264103, 69.02743414645143, 95.59657963159697, 51.267241155481514, 90.71435188528757, 38.28119512070857, 73.87713433651007, 72.37867324589962]
+[74.04488016597011, 59.91177374972398, 39.76985391363735, 41.60092655311268, 40.154054543561905, 73.93308563141153, 71.0696352859349, 60.329468433414455, 40.115632371392124, 48.432379236030776, 55.80902094346585, 35.77807994246532, 56.47161351140382, 38.73078881188887, 66.8834751868932, 51.0899380322674, 73.048062771665, 92.29961731670343, 55.68607625956725, 67.54898688113377, 91.98866170019895, 44.93099486341207, 98.67314406316204, 35.712491128999964, 89.76539766091872, 94.96236278103345, 89.36432739258572, 69.39898830367694, 66.82030668049124, 52.28000307654561, 44.48772829567769, 80.20411741870836, 60.01174302709286, 33.377603307410695, 42.81267434575719, 64.58011111417002, 69.18316572125897, 92.92164702143555, 58.669762310406654, 96.50296097882146, 94.94196895555729, 90.07619831388254, 33.23984261174291, 78.36463187636753, 78.1304012090248, 44.26541177081312, 57.40063838478549, 40.965893030620876, 36.490178494220785, 32.10290285617648, 64.25172827630198, 84.34868568612904, 70.66688414227971, 34.89288772862139, 55.39565622734671, 82.69518982014023, 63.96984016487838, 52.408772900942864, 36.63494813614879, 46.63404168358944, 32.19759845083697, 69.58067447884491, 43.95186719455353, 97.03244733537514, 43.35876792659942, 70.27410402005836, 71.46974982167794, 67.71619022129106, 86.26244676716232, 60.51787365441625, 89.55182063807425, 32.54785875038108, 53.72200295057264, 80.34000615448117, 99.27538143821558, 56.90684237354111, 92.51053037477749, 40.79627765446605, 57.226345461021424, 64.85297972687698, 54.22579671803442, 76.82673862832686, 65.89106507705071, 51.11898832313019, 50.86707662677034, 81.25139168987205, 79.87949109548947, 79.56510087761862, 72.19575030733566, 68.5169531525698, 82.7956833360558, 92.84261987043027, 82.84610530516923, 60.73241574431341, 55.778749327207734, 83.75135809519418, 65.67229874234467]
+[37.08193809403061, 70.56932168123144, 83.1392560014161, 69.96198340215977, 68.87929707889339, 77.41368675267707, 34.18070359698207, 58.91660996078608, 48.32901934864694, 93.19976818939227, 44.48339955840507, 66.1929694200514, 61.48499456008171, 39.92610676140937, 35.71186990984196, 78.32005940954214, 62.94821869428011, 81.93712312947923, 89.27902696537694, 34.44989312449555, 57.52107303863162, 94.3148743751147, 44.145435966013224, 45.170396942987765, 98.33631128278894, 44.39961941607572, 86.8792648902826, 58.003087553686925, 75.90474930028346, 91.61851928997893, 60.868130066989025, 70.72772194047212, 50.07639175949466, 35.633792713346736, 58.937363395794975, 86.8206913528781, 47.085522508454716, 57.278755013631894, 55.61750472545377, 52.06339902484204, 62.651097256081144, 68.83211792880252, 37.91708652934526, 63.771461035715575, 87.52950407341493, 79.8880188035199, 94.69508419720705, 68.1150409375488, 43.9675871189045, 92.41124935518738, 44.59065979562704, 68.64520364213536, 46.1795834146219, 55.52418600410652, 80.95613237914876, 32.41067727296819, 63.272413939490306, 41.15397562686091, 41.352383809702914, 66.94396382129193, 36.969543030799166, 85.8755467705126, 92.90415759107219, 67.91524322706701, 57.034418680758456, 54.118022189216745, 75.17605813365225, 91.3970905018036, 84.47026086434957, 33.35921245528533, 83.21826695921625, 94.45249946345402, 72.37377179976717, 85.01482004709865, 93.0443139554651, 69.15330147196397, 86.74611084148754, 85.43604724549975, 94.041521877447, 60.15552687809871, 50.61526326878678, 51.7613790637932, 85.67800417287617, 88.60287457867923, 92.49969704148737, 49.32524419613159, 55.358397637869935, 89.39889773960536, 74.54401253952423, 56.908377990245356, 76.39377436617883, 80.78310058688386, 90.58304301585945, 79.32170761667693, 85.78948198764049, 40.665673572639534, 47.94166842074303]
+[91.64759379025276, 32.917914078683175, 83.32009145006985, 90.95335701830663, 47.919330051949274, 56.131524316644914, 92.80234088754423, 36.98127143401749, 81.10181030645614, 68.98464786026105, 95.86011905820146, 69.15151037209644, 92.9433020019739, 48.97099505815403, 51.11479813906089, 72.05888053615391, 57.6003202200106, 95.54697106567684, 48.94355541487389, 43.38134112283051, 61.89458771282392, 32.699226982602646, 45.75855010810627, 61.64007749619793, 61.64314565621022, 70.4281549050225, 85.27458475023226, 94.26790449742282, 79.70967225175137, 77.25731569897917, 75.87620941025433, 78.69951110565876, 67.25710709477463, 40.24205664296363, 77.33977220077577, 86.37282436834494, 63.13873295739801, 75.93887181619695, 85.93542738002901, 73.3315666446986, 41.446860364035814, 69.41034475157076, 42.32865702936562, 91.54482823271006, 33.94532679917291, 62.578758001296876, 33.7204102716394, 54.110310116930414, 60.44403087109417, 32.104788592708296, 72.3094534966431, 83.18362142517228, 40.13075129633657, 54.45594341137192, 38.430105027302076, 97.77682864697577, 82.4575694069375, 75.94270166253635, 46.6130136779109, 71.49522613856887, 75.38617610391344, 68.23858796384438, 34.336211060421604, 39.83207855546483, 81.62845209227856, 67.26370165336442, 90.37816725497079, 98.81687460151004, 63.97568822342738, 89.29949449502072, 72.45413016994547, 75.61338327784887, 40.89185234958149, 84.81588193844604, 40.21155964540483, 75.0896382238262, 63.25337479747435, 63.73003975163643, 49.67997506176124, 50.432699228020624, 66.4499049338352, 33.679538989292595, 70.91511717805912, 62.55686331341646, 37.01755756767653, 67.38072682507114, 41.846775445344676, 62.354765934499476, 87.55819649385701, 72.25657211659332, 98.23426827680937, 71.7665733899108, 65.90530954134562, 75.25646034679612, 54.1529885022608, 54.1932904684639, 50.329097123650925]
+[94.15368129865871, 77.58003770865957, 79.95594872320865, 42.03038770533881, 63.59469668088472, 59.41646029431858, 32.30325158637986, 35.255065855684904, 59.78748303495074, 71.67814336489204, 47.89600917746064, 88.06769257349586, 37.95457296534522, 55.60694642789989, 50.747494378726465, 85.1550511419248, 65.53968873427793, 65.09822023091263, 68.27463277405477, 33.98738485966431, 73.64514342605096, 95.1103157434867, 68.41570034092794, 91.24710660850269, 75.29044581627905, 64.61630050687006, 47.69601933507028, 41.64179488803546, 63.82086785282527, 51.17757929175224, 75.67388187249554, 34.0503598489597, 72.15797944945987, 89.36366186870576, 41.37474732658422, 64.40822412779046, 43.57244165021608, 60.01185569925339, 88.12252411844958, 76.81945504858072, 45.2726599297418, 79.71518651097938, 64.60252465042356, 62.09079726255517, 71.34112603178356, 77.94639238631311, 98.04148212122725, 94.21457325991591, 59.41361994352042, 42.870340427928845, 58.06577187759706, 52.28446164846608, 93.98468144970175, 70.16678971153334, 91.09978507559686, 71.91019621292017, 60.33604519927454, 90.079910001076, 89.09216755045037, 48.40426875929029, 34.823048135952696, 52.430531799703445, 48.908442988796985, 41.845701773981524, 37.617257098689535, 37.47161294942878, 71.90426516832815, 87.5830755101997, 88.99187228715839, 40.23695440844165, 78.99441108489776, 70.82092907209814, 95.84973373011191, 95.42770804460395, 74.95831807010006, 92.64076510051831, 71.43203544859541, 44.90078246878484, 82.77381282863682, 89.13985359034157, 70.00915999012784, 40.46774040586118, 56.44643449432125, 77.32813387991385, 79.84327600328723, 68.98236005547221, 89.1025480292769, 43.00546312339415, 37.82567388830106, 60.589530058269474, 62.040191430791914, 65.04856161073471, 59.93006893459017, 70.52768363664029, 85.98244414999905, 55.36899567151674, 38.98639325454963]
+[90.02153904907853, 99.95381991813674, 60.2605837657917, 93.26785226152859, 86.57138415745149, 36.001019019837784, 92.93664081116407, 47.997372171815144, 42.33974861757134, 81.40510610699252, 88.76450400650437, 49.11773743684508, 43.355771340571145, 98.08303283261222, 82.03683369431639, 40.533114417859956, 35.90215080846251, 95.55211213055341, 68.07616294751404, 46.5178463174453, 89.71906498579636, 75.13192448175197, 73.05128020142692, 78.10174713465295, 62.554001729942556, 80.98385856886509, 34.09098463358056, 61.97936690628963, 63.105947423970576, 48.1392690776737, 70.11281960127704, 80.8540017681193, 63.55694743274552, 80.843084201325, 43.24144064692027, 95.11548719451434, 46.653542148547224, 94.34036740243124, 43.7732556430466, 63.36411917598078, 33.6951498524009, 41.65921723418781, 38.351043644652165, 77.53129778291566, 48.80597253887614, 63.99412188067684, 49.34429232562063, 61.21079706801167, 63.51154962966052, 36.96966407138346, 51.38798947229121, 87.30282210494008, 49.91060316537886, 67.36528499632195, 50.61468247066313, 81.1863194752133, 42.62736437281081, 45.8075614681545, 45.321602717311265, 88.37326949006986, 45.24908668567794, 96.48724537336429, 85.64672889095579, 84.96197881264024, 56.09798197563805, 65.13411384164425, 74.28466583747698, 63.1946643167124, 70.95636999243408, 79.28343289051415, 68.35524577389249, 33.037925672625754, 74.75833995516459, 60.29362155342343, 98.24480851346448, 63.942942947006166, 80.28074766383213, 48.62551463439996, 32.57213273761483, 32.80556349945289, 73.51094383661051, 90.56935284309532, 97.38802976087818, 64.63467929224441, 98.63810776459833, 57.906467620741395, 78.29964536762367, 39.55062074902118, 96.50963024224349, 79.9183596549325, 60.4175208383123, 57.47353526108417, 82.91350212612484, 35.70667728949354, 44.85554052996551, 72.2250232575899, 77.19220997918978]
+[79.96338547693009, 49.97088631189881, 37.75458123341823, 83.46314511578612, 61.13117455524261, 40.613164563004965, 86.81568169076581, 54.11511046213485, 53.31996695414689, 89.35890446109835, 82.65459345150651, 32.269979610336144, 62.39614065991728, 52.03965808412659, 95.13833858231423, 80.54315225934704, 58.33687384924315, 39.828946171673074, 66.23646789821028, 61.70593799552676, 66.24280831491988, 67.73536831215404, 45.88458527420575, 94.74756541868709, 33.32799671167839, 62.5561666487056, 65.99587832614444, 99.35400904166488, 34.75687571375438, 62.177615789937335, 89.75017046870087, 34.96539606786058, 95.37382125544369, 32.56562000061154, 85.27827392995636, 85.34325114323559, 43.17156646201102, 84.87192616683616, 99.4727456620096, 91.97340033270495, 41.77060539310539, 96.78839937430149, 44.89438941646022, 67.6498622656695, 73.23245149914479, 37.61385720644665, 52.607153464503284, 57.229584680639434, 91.20538627332621, 97.45493293350029, 62.262347259011804, 59.81745367369464, 73.70217669833688, 99.56455447807663, 45.866378238403236, 73.5354770670825, 90.7349408692333, 87.028566225551, 33.40450107879664, 38.54962106524849, 72.58319043337846, 56.84314005870324, 86.85632332146326, 80.17228951188355, 75.64682493160134, 97.88255970879271, 66.12715313656213, 67.62796474514555, 74.63662746485308, 94.33909050269412, 98.03248005714607, 89.46407725579226, 54.28062753348685, 66.92360108083146, 65.71123154753164, 75.60867424797385, 38.77545103414918, 48.44768256741313, 40.70666657907705, 48.72102523228283, 34.887545248062516, 84.36499816447562, 55.442108333781434, 55.75079712612856, 42.91000191798686, 52.431689803883906, 83.93193956823612, 98.51598879025426, 36.60641166636947, 64.85263324599389, 43.30663126083187, 45.62933011123251, 80.82403859960851, 83.11240698071377, 80.09378752106238, 83.24740471037907, 47.634309095513125]
+[64.14684918222275, 99.18552980051474, 76.8862417254231, 40.65945429399943, 82.59314441265366, 74.03577612998333, 42.94171616972427, 46.669892570985915, 33.56334361142637, 99.86930312499233, 98.57256505739441, 91.58773015795386, 33.71833350521022, 53.547710236908294, 32.248410978314205, 84.70753123814515, 65.37624209107506, 44.2257165291451, 98.53467535270852, 90.24630383603886, 64.97133137626172, 90.044498667022, 77.58082130201456, 33.26041395563195, 91.38644118999025, 89.84704306465383, 52.297888600067566, 35.51793952516421, 65.51408967814922, 63.26379805612586, 80.35579888795182, 50.09073076207294, 53.85836753268751, 91.50515297093735, 93.90048917674709, 81.23125287019715, 76.07178308078691, 84.81059006057555, 35.28538310183928, 42.52505729991073, 89.02826358230557, 70.74260541865391, 96.13133438759023, 61.36049460571199, 86.36553670064976, 32.376805047744824, 65.673614804664, 97.43308271615544, 76.38714261347619, 70.9278375513348, 40.62414244084509, 63.30273156376855, 62.7963808677482, 91.46411879089221, 66.67158348637636, 55.947770135942115, 99.9415099822569, 45.10259774126621, 59.26158686991019, 65.81054568191203, 95.08353654404542, 70.43804894562709, 56.4438561242811, 32.00511809385772, 52.655006823747804, 32.94973679084858, 65.34234802190495, 75.15836987234891, 91.56018562404006, 99.741474285375, 40.19941723484881, 86.78161455212009, 32.274084937221915, 84.20948930300467, 65.96421473040104, 34.12059810559412, 33.82982791105155, 39.09570499295734, 45.04022957540641, 76.1075280785168, 65.74083200470858, 82.87236452489987, 88.07637716708138, 87.33958704962564, 50.48637038705982, 33.51722445248784, 48.58053837811233, 92.93414655884716, 96.3960868078678, 51.47676723583757, 95.65404300090236, 35.661670912017875, 62.60104195676536, 51.978232358619266, 85.29006758391523, 39.93310649685702, 97.17596206917621]
+]]></system-out>
+  </testcase>
+  <testcase name="test5493" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5494" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5495" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 3500.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5496" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5497" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5498" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+  <testcase name="test5499" classname="com.operations.Matrix.RegressionTest10" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test5500" classname="com.operations.Matrix.RegressionTest10" time="0.0"/>
+</testsuite>

@@ -1,0 +1,2385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.operations.Matrix.RegressionTest2" time="0.163" tests="500" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\test-classes;C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\classes;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.0\spring-boot-starter-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot\3.4.0\spring-boot-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-context\6.2.0\spring-context-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-aop\6.2.0\spring-aop-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-beans\6.2.0\spring-beans-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-expression\6.2.0\spring-expression-6.2.0.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-observation\1.14.1\micrometer-observation-1.14.1.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-commons\1.14.1\micrometer-commons-1.14.1.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.0\spring-boot-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.0\spring-boot-starter-logging-3.4.0.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-classic\1.5.12\logback-classic-1.5.12.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-core\1.5.12\logback-core-1.5.12.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.1\log4j-to-slf4j-2.24.1.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\babal\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-core\6.2.0\spring-core-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-jcl\6.2.0\spring-jcl-6.2.0.jar;C:\Users\babal\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.0\spring-boot-starter-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test\3.4.0\spring-boot-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.0\spring-boot-test-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\babal\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\babal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\babal\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\babal\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\babal\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\babal\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\babal\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.10\byte-buddy-agent-1.15.10.jar;C:\Users\babal\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\babal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\babal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\babal\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\babal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\babal\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\babal\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-test\6.2.0\spring-test-6.2.0.jar;C:\Users\babal\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\babal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="America/Phoenix"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028\surefirebooter-20241209114331853_3.jar C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028 2024-12-09T11-43-31_743-jvmRun1 surefire-20241209114331853_1tmp surefire_0-20241209114331853_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\test-classes;C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix\target\classes;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.0\spring-boot-starter-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot\3.4.0\spring-boot-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-context\6.2.0\spring-context-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-aop\6.2.0\spring-aop-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-beans\6.2.0\spring-beans-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-expression\6.2.0\spring-expression-6.2.0.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-observation\1.14.1\micrometer-observation-1.14.1.jar;C:\Users\babal\.m2\repository\io\micrometer\micrometer-commons\1.14.1\micrometer-commons-1.14.1.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.0\spring-boot-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.0\spring-boot-starter-logging-3.4.0.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-classic\1.5.12\logback-classic-1.5.12.jar;C:\Users\babal\.m2\repository\ch\qos\logback\logback-core\1.5.12\logback-core-1.5.12.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.1\log4j-to-slf4j-2.24.1.jar;C:\Users\babal\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.1\log4j-api-2.24.1.jar;C:\Users\babal\.m2\repository\org\slf4j\jul-to-slf4j\2.0.16\jul-to-slf4j-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-core\6.2.0\spring-core-6.2.0.jar;C:\Users\babal\.m2\repository\org\springframework\spring-jcl\6.2.0\spring-jcl-6.2.0.jar;C:\Users\babal\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.0\spring-boot-starter-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test\3.4.0\spring-boot-test-3.4.0.jar;C:\Users\babal\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.0\spring-boot-test-autoconfigure-3.4.0.jar;C:\Users\babal\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\babal\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\babal\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\babal\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\babal\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\babal\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\babal\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\babal\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy\1.15.10\byte-buddy-1.15.10.jar;C:\Users\babal\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\babal\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.10\byte-buddy-agent-1.15.10.jar;C:\Users\babal\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\babal\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\babal\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.3\junit-jupiter-api-5.11.3.jar;C:\Users\babal\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\babal\.m2\repository\org\junit\platform\junit-platform-commons\1.11.3\junit-platform-commons-1.11.3.jar;C:\Users\babal\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\babal\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\babal\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\babal\.m2\repository\org\springframework\spring-test\6.2.0\spring-test-6.2.0.jar;C:\Users\babal\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;C:\Users\babal\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\babal\.m2\repository\org\hamcrest\hamcrest-core\2.2\hamcrest-core-2.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\babal"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\babal\AppData\Local\Temp\surefire15261729316555012028\surefirebooter-20241209114331853_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+11-LTS"/>
+    <property name="user.name" value="babal"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.5+11"/>
+    <property name="localRepository" value="C:\Users\babal\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\babal\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Users\babal\OneDrive\Desktop\Jasweer_Files\new\Matrix\Matrix"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Eclipse Adoptium\jdk-21.0.5.11-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\dotnet\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\CMake\bin;C:\Program Files\Java\jdk-23;C:\Users\babal\Downloads\cloc-master;C:\ProgramData\chocolatey\bin;C:\Users\babal\tools\evosuite;C:\Program Files\Apache\maven\apache-maven-3.9.9-bin\apache-maven-3.9.9\bin;C:\Program Files\Java\jdk-17\bin;C:\Users\babal\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\babal\AppData\Local\Programs\Python\Python312\;C:\Users\babal\AppData\Local\Programs\Python\Launcher\;C:\Users\babal\AppData\Local\Microsoft\WindowsApps;C:\Users\babal\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\babal\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.5+11-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="test1001" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1002" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1003" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1004" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1005" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1006" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1007" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1008" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1009" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1010" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1011" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1012" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1013" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1014" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1015" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.8191520442889918, -0.573576436351046]
+[0.573576436351046, 0.8191520442889918]
+]]></system-out>
+  </testcase>
+  <testcase name="test1016" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1017" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1018" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1019" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1020" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1021" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1022" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1023" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1024" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+[10.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1025" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1026" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1027" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1028" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1029" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1030" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1031" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1032" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1033" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1034" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1035" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1036" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1037" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1038" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1039" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1040" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1041" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1042" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1043" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1044" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1045" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1046" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1047" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1048" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1049" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1050" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1051" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1052" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1053" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1054" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1055" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1056" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1057" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1058" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1059" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1060" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1061" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1062" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1063" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1064" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1065" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1066" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1067" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1068" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1069" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1070" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1071" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1072" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 0.0]
+[0.0, 35.0]
+[10.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1073" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1074" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1075" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1076" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1077" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 20.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1078" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1079" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1080" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1081" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1082" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1083" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1084" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1085" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1086" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1087" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1088" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1089" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1090" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1091" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1092" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1093" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1094" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1095" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1096" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1097" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1098" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1099" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1100" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1101" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1102" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1103" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1104" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1105" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1106" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1107" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1108" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1109" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, 0.984807753012208]
+[-0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1110" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1111" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1112" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0, 0.0]
+[0.0, 364.0054944640259]
+]]></system-out>
+  </testcase>
+  <testcase name="test1113" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1114" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1115" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[9.015192246987793, -0.1736481776669304]
+[0.1736481776669304, 9.015192246987793]
+]]></system-out>
+  </testcase>
+  <testcase name="test1116" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1117" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1118" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1119" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1120" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1121" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1122" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1123" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1124" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1125" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1126" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1127" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1128" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1129" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1130" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1131" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1132" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1133" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1134" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1135" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1136" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1137" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1138" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1139" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1140" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1141" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1142" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1143" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1144" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1145" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1146" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1147" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1148" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1149" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1150" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1151" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1152" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1153" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1154" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1155" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1156" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1157" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1158" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1159" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1160" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1161" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1162" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1163" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1164" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1165" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1166" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1167" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1168" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1169" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1170" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1171" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1172" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1173" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1174" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1175" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1176" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1177" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1178" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1179" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+[0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1180" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1181" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1182" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1183" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1184" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1185" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1186" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1187" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1188" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1189" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1190" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 100.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1191" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1192" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1193" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1194" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1195" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1196" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1197" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1198" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1199" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1200" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1201" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1202" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 100.0]
+[0.0, 970.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1203" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1204" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1205" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1206" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1207" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1208" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1209" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1210" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1211" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1212" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1213" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1214" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1215" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1216" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1217" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1218" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1219" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1220" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1221" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1222" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1223" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1224" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1225" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[]
+[]
+]]></system-out>
+  </testcase>
+  <testcase name="test1226" classname="com.operations.Matrix.RegressionTest2" time="0.002"/>
+  <testcase name="test1227" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1228" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1229" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1230" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1231" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1232" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1233" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1234" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1235" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1236" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1237" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1238" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1239" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1240" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1241" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1242" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1243" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1244" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1245" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1246" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1247" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1248" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1249" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1250" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1251" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1252" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1253" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1254" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1255" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1256" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1257" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1258" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1259" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1260" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1261" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1262" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 100.0]
+[0.0, 970.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1263" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1264" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1265" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1266" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1267" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1268" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1269" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1270" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1271" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1272" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1273" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1274" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1275" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1276" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1277" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1278" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1279" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1280" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1281" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1282" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1283" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1284" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1285" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1286" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[3.1622776601683795, 0.0]
+[3.162277660168379, 9.327379053088816]
+]]></system-out>
+  </testcase>
+  <testcase name="test1287" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1288" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1289" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1290" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1291" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1292" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1293" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1294" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1295" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+]]></system-out>
+  </testcase>
+  <testcase name="test1296" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[1.0, -0.0]
+[0.0, 1.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1297" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1298" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1299" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1300" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1301" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[1379.0576492663388, 13376.859197883487]
+[1379.0576492663388, 13376.859197883487]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1302" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1303" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1304" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1305" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1306" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1307" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1308" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1309" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1310" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1311" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1312" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1313" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1314" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1315" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1316" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1317" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[]
+]]></system-out>
+  </testcase>
+  <testcase name="test1318" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1319" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1320" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1321" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1322" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1323" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1324" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1325" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1326" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[32.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1327" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1328" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1329" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.9998476951563913, 0.01745240643728351]
+[-0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1330" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1331" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1332" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1333" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1334" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1335" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1336" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1337" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1338" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1339" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1340" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1341" classname="com.operations.Matrix.RegressionTest2" time="0.002">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1342" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[134477.56764605764, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1343" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1344" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1345" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[]
+[]
+]]></system-out>
+  </testcase>
+  <testcase name="test1346" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1347" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1348" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1349" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1350" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1351" classname="com.operations.Matrix.RegressionTest2" time="0.008">
+    <system-out><![CDATA[[1.0, 0.0]
+[0.0, 167.90576492663388]
+]]></system-out>
+  </testcase>
+  <testcase name="test1352" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1353" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1354" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1355" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1356" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1357" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1358" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1359" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1360" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1361" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1362" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1363" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-1.0, 0.0]
+[0.0, 364.0054944640259]
+]]></system-out>
+  </testcase>
+  <testcase name="test1364" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.6156614753256583, -0.788010753606722]
+[0.788010753606722, 0.6156614753256583]
+]]></system-out>
+  </testcase>
+  <testcase name="test1365" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1366" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1367" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1368" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1369" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1370" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1371" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1372" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1373" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1374" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1375" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1376" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1377" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1378" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1379" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1380" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1381" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1382" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1383" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 10.0]
+[97.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1384" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1385" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1386" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1387" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1388" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1389" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1390" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1391" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1392" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1393" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1394" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1395" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-1.0, 0.0]
+[0.0, 20.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1396" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1397" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1398" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1399" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1400" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1401" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1402" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1403" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1404" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1405" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1406" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1407" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1408" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1409" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[350.0, 0.0]
+[0.0, 32.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1410" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1411" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1412" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1413" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1414" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1415" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1416" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1417" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1418" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1419" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1420" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1421" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+[0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1422" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1423" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1424" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1425" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1426" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1427" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1428" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1429" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1430" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1431" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1432" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1433" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1434" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1435" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1436" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1437" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1438" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1439" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1440" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1441" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1442" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+[35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1443" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1444" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1445" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1446" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1447" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1448" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1449" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1450" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1451" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1452" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1453" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1454" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1455" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1456" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1457" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1458" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1459" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1460" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1461" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1462" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1463" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1464" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1465" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1466" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1467" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1468" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1469" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[22.0, -97.0]
+[-10.0, -107.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1470" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1471" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1472" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1473" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1474" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1475" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[1070.0, 10379.0]
+[1070.0, 10379.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1476" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1477" classname="com.operations.Matrix.RegressionTest2" time="0.001">
+    <system-out><![CDATA[[-0.1736481776669303, -0.984807753012208]
+[0.984807753012208, -0.1736481776669303]
+]]></system-out>
+  </testcase>
+  <testcase name="test1478" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1479" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1480" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 0.0]
+[0.0, 35.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1481" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1482" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1483" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1484" classname="com.operations.Matrix.RegressionTest2" time="0.001"/>
+  <testcase name="test1485" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1486" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[100.0, 0.0]
+[0.0, 0.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1487" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1488" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1489" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1490" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1491" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1492" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1493" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1494" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1495" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+[0.9998476951563913, -0.01745240643728351]
+[0.01745240643728351, 0.9998476951563913]
+[0.0, 0.0]
+[0.0, 10.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1496" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1497" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1498" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+  <testcase name="test1499" classname="com.operations.Matrix.RegressionTest2" time="0.0">
+    <system-out><![CDATA[[10.0, 97.0]
+[10.0, 97.0]
+]]></system-out>
+  </testcase>
+  <testcase name="test1500" classname="com.operations.Matrix.RegressionTest2" time="0.0"/>
+</testsuite>

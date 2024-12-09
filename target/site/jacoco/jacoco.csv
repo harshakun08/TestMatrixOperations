@@ -1,0 +1,8 @@
+GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
+MatrixOperation,com.operations.Matrix,MatrixApplication,344,3,2,0,52,1,3,1,2,1
+MatrixOperation,com.operations.Matrix,MatrixSolver,0,226,0,24,0,31,0,14,0,2
+MatrixOperation,com.operations.Matrix,MatrixDecompositions,0,283,0,28,0,40,0,17,0,3
+MatrixOperation,com.operations.Matrix,MatrixOperations,0,263,0,32,0,44,0,22,0,6
+MatrixOperation,com.operations.Matrix,Matrix,0,104,0,4,0,23,0,11,0,9
+MatrixOperation,com.operations.Matrix,MatrixTransformations,0,113,0,0,0,10,0,4,0,4
+MatrixOperation,com.operations.Matrix,MatrixUtils,0,175,0,28,0,28,0,21,0,7

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MatrixApplication.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">MatrixOperation</a> &gt; <a href="index.source.html" class="el_package">com.operations.Matrix</a> &gt; <span class="el_source">MatrixApplication.java</span></div><h1>MatrixApplication.java</h1><pre class="source lang-java linenums">package com.operations.Matrix;
+
+<span class="fc" id="L3">public class MatrixApplication {</span>
+
+    public static void main(String[] args) {
+        // Example 1: Matrix Addition
+<span class="nc" id="L7">        System.out.println(&quot;=== Matrix Addition ===&quot;);</span>
+<span class="nc" id="L8">        double[][] dataA = {</span>
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
+<span class="nc" id="L13">        double[][] dataB = {</span>
+            {9, 8, 7},
+            {6, 5, 4},
+            {3, 2, 1}
+        };
+<span class="nc" id="L18">        Matrix matrixA = new Matrix(dataA);</span>
+<span class="nc" id="L19">        Matrix matrixB = new Matrix(dataB);</span>
+<span class="nc" id="L20">        Matrix result = MatrixOperations.add(matrixA, matrixB);</span>
+<span class="nc" id="L21">        System.out.println(&quot;Matrix A:&quot;);</span>
+<span class="nc" id="L22">        matrixA.print();</span>
+<span class="nc" id="L23">        System.out.println(&quot;Matrix B:&quot;);</span>
+<span class="nc" id="L24">        matrixB.print();</span>
+<span class="nc" id="L25">        System.out.println(&quot;A + B:&quot;);</span>
+<span class="nc" id="L26">        result.print();</span>
+
+        // Example 2: LU Decomposition
+<span class="nc" id="L29">        System.out.println(&quot;\n=== LU Decomposition ===&quot;);</span>
+<span class="nc" id="L30">        double[][] luData = {</span>
+            {4, 3},
+            {6, 3}
+        };
+<span class="nc" id="L34">        Matrix matrixLU = new Matrix(luData);</span>
+<span class="nc" id="L35">        Matrix[] luResult = MatrixDecompositions.luDecomposition(matrixLU);</span>
+<span class="nc" id="L36">        System.out.println(&quot;Original Matrix:&quot;);</span>
+<span class="nc" id="L37">        matrixLU.print();</span>
+<span class="nc" id="L38">        System.out.println(&quot;Lower Matrix:&quot;);</span>
+<span class="nc" id="L39">        luResult[0].print();</span>
+<span class="nc" id="L40">        System.out.println(&quot;Upper Matrix:&quot;);</span>
+<span class="nc" id="L41">        luResult[1].print();</span>
+
+        // Example 3: Rotation Transformation
+<span class="nc" id="L44">        System.out.println(&quot;\n=== 2D Rotation Transformation ===&quot;);</span>
+<span class="nc" id="L45">        double angle = 45; // Degrees</span>
+<span class="nc" id="L46">        Matrix rotationMatrix = MatrixTransformations.rotate2D(angle);</span>
+<span class="nc" id="L47">        System.out.println(&quot;Rotation Matrix for &quot; + angle + &quot; degrees:&quot;);</span>
+<span class="nc" id="L48">        rotationMatrix.print();</span>
+
+        // Example 4: Frobenius Norm
+<span class="nc" id="L51">        System.out.println(&quot;\n=== Frobenius Norm ===&quot;);</span>
+<span class="nc" id="L52">        double frobeniusNorm = MatrixUtils.frobeniusNorm(matrixA);</span>
+<span class="nc" id="L53">        System.out.println(&quot;Frobenius Norm of Matrix A: &quot; + frobeniusNorm);</span>
+
+        // Example 5: Solve a Linear System (Gaussian Elimination)
+<span class="nc" id="L56">        System.out.println(&quot;\n=== Solve Linear System ===&quot;);</span>
+<span class="nc" id="L57">        double[][] linearSystem = {</span>
+            {2, 1},
+            {5, 7}
+        };
+<span class="nc" id="L61">        double[] constants = {11, 13};</span>
+<span class="nc" id="L62">        Matrix matrixLinear = new Matrix(linearSystem);</span>
+<span class="nc" id="L63">        double[] solution = MatrixSolver.solveGaussian(matrixLinear, constants);</span>
+<span class="nc" id="L64">        System.out.println(&quot;Linear System Matrix:&quot;);</span>
+<span class="nc" id="L65">        matrixLinear.print();</span>
+<span class="nc" id="L66">        System.out.println(&quot;Constants: &quot;);</span>
+<span class="nc" id="L67">        printArray(constants);</span>
+<span class="nc" id="L68">        System.out.println(&quot;Solution:&quot;);</span>
+<span class="nc" id="L69">        printArray(solution);</span>
+
+        // Example 6: Random Matrix Generation
+<span class="nc" id="L72">        System.out.println(&quot;\n=== Random Matrix Generation ===&quot;);</span>
+<span class="nc" id="L73">        Matrix randomMatrix = MatrixUtils.generateRandomMatrix(3, 3, 1, 10, 12345L);</span>
+<span class="nc" id="L74">        System.out.println(&quot;Randomly Generated 3x3 Matrix:&quot;);</span>
+<span class="nc" id="L75">        randomMatrix.print();</span>
+
+        // Example 7: Matrix Symmetry Check
+<span class="nc" id="L78">        System.out.println(&quot;\n=== Symmetry Check ===&quot;);</span>
+<span class="nc" id="L79">        System.out.println(&quot;Is Matrix A symmetric? &quot; + MatrixUtils.isSymmetric(matrixA));</span>
+<span class="nc" id="L80">    }</span>
+
+    // Utility method to print a 1D array
+    private static void printArray(double[] array) {
+<span class="nc bnc" id="L84" title="All 2 branches missed.">        for (double value : array) {</span>
+<span class="nc" id="L85">            System.out.printf(&quot;%.4f &quot;, value);</span>
+        }
+<span class="nc" id="L87">        System.out.println();</span>
+<span class="nc" id="L88">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

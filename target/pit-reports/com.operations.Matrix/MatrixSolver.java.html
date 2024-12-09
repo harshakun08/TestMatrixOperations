@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>MatrixSolver.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package com.operations.Matrix;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class MatrixSolver {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;public static double[] solveGaussian(Matrix matrix, double[] constants) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_6'/>
+6
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_6'>1</a>
+<span>
+
+1. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    if (matrix.getRows() != matrix.getCols()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;        throw new IllegalArgumentException(&#34;Matrix must be square to solve equations.&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_9'>1</a>
+<span>
+
+1. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    if (matrix.getRows() != constants.length) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;        throw new IllegalArgumentException(&#34;Constant vector size must match matrix size.&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_12'/>
+12
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_12'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;    int n = matrix.getRows();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_14'>1</a>
+<span>
+
+1. solveGaussian : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    double[][] augmented = new double[n][n + 1];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    // Augment the matrix with constants</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_17'>2</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    for (int i = 0; i &#60; n; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_18'/>
+18
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_18'>1</a>
+<span>
+
+1. solveGaussian : removed call to java/lang/System::arraycopy &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;        System.arraycopy(matrix.getData()[i], 0, augmented[i], 0, n);</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;        augmented[i][n] = constants[i];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_22'/>
+22
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_22'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    // Gaussian elimination</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_23'/>
+23
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_23'>2</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    for (int i = 0; i &#60; n; i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        // Partial pivoting</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_25'/>
+25
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_25'>3</a>
+<span>
+
+1. solveGaussian : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+3. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;        for (int k = i + 1; k &#60; n; k++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_26'/>
+26
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_26'>2</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;            if (Math.abs(augmented[k][i]) &#62; Math.abs(augmented[i][i])) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_27'/>
+27
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_27'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;                double[] temp = augmented[i];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_28'/>
+28
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_28'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;                augmented[i] = augmented[k];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;                augmented[k] = temp;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_30'/>
+30
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_30'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        // Check for singular matrix</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_34'/>
+34
+</td>
+<td class='survived'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_34'>2</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; SURVIVED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='survived'>&#9;        if (Math.abs(augmented[i][i]) &#60; 1e-10) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_35'/>
+35
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_35'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;            throw new IllegalArgumentException(&#34;Matrix is singular or nearly singular.&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        // Normalize row i</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_39'>3</a>
+<span>
+
+1. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+2. solveGaussian : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+3. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;        for (int j = i + 1; j &#60;= n; j++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_40'/>
+40
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_40'>1</a>
+<span>
+
+1. solveGaussian : Replaced double division with multiplication &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;            augmented[i][j] /= augmented[i][i];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;        augmented[i][i] = 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_43'/>
+43
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_43'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_44'/>
+44
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_44'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        // Eliminate column i in subsequent rows</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_45'/>
+45
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_45'>3</a>
+<span>
+
+1. solveGaussian : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+2. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+3. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;        for (int k = i + 1; k &#60; n; k++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;            double factor = augmented[k][i];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_47'/>
+47
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_47'>2</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;            for (int j = i; j &#60;= n; j++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_48'/>
+48
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_48'>2</a>
+<span>
+
+1. solveGaussian : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+2. solveGaussian : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;                augmented[k][j] -= factor * augmented[i][j];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;            }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    // Back-substitution</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_54'/>
+54
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_54'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;    double[] solution = new double[n];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_55'/>
+55
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_55'>3</a>
+<span>
+
+1. solveGaussian : Replaced integer subtraction with addition &rarr; KILLED<br/>
+
+2. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+3. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    for (int i = n - 1; i &#62;= 0; i--) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>&#9;        solution[i] = augmented[i][n];</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_57'/>
+57
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_57'>3</a>
+<span>
+
+1. solveGaussian : changed conditional boundary &rarr; KILLED<br/>
+
+2. solveGaussian : negated conditional &rarr; KILLED<br/>
+
+3. solveGaussian : Replaced integer addition with subtraction &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;        for (int j = i + 1; j &#60; n; j++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_58'/>
+58
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_58'>2</a>
+<span>
+
+1. solveGaussian : Replaced double subtraction with addition &rarr; KILLED<br/>
+
+2. solveGaussian : Replaced double multiplication with division &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;            solution[i] -= augmented[i][j] * solution[j];</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_59'/>
+59
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_59'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;        }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;    }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_61'/>
+61
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_61'>1</a>
+<span>
+
+1. solveGaussian : replaced return value with null for com/operations/Matrix/MatrixSolver::solveGaussian &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>&#9;    return solution;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_62'/>
+62
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_62'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>&#9;}</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_63'/>
+63
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_63'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@1a5b7394_64'/>
+64
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_64'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_6'>6</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_6'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testNonSquareMatrixThrowsException(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testConstantsSizeMismatchThrowsException(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_18'>18</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_18'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> removed call to java/lang/System::arraycopy &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_23'>23</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_23'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_25'>25</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_25'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_26'>26</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_26'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.RegressionTest8.test4481(com.operations.Matrix.RegressionTest8)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.RegressionTest2.test1121(com.operations.Matrix.RegressionTest2)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_34'>34</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_34'/> 
+
+<p class='SURVIVED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>none</span></span> changed conditional boundary &rarr; SURVIVED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_40'>40</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_40'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced double division with multiplication &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_45'>45</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_45'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_47'>47</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_47'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussian(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianWithPivoting(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_48'>48</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_48'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianWithPivoting(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianWithPivoting(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_55'>55</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_55'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_57'>57</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_57'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced integer addition with subtraction &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_58'>58</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_58'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussian(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced double subtraction with addition &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussian(com.operations.Matrix.MatrixSolverTest)</span></span> Replaced double multiplication with division &rarr; KILLED</p> 
+</td>
+</tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@1a5b7394_61'>61</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@1a5b7394_61'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>solveGaussian<br/><b>Killed by : </b>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest)</span></span> replaced return value with null for com/operations/Matrix/MatrixSolver::solveGaussian &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+
+<li class='mutator'>EMPTY_RETURNS</li>
+
+<li class='mutator'>FALSE_RETURNS</li>
+
+<li class='mutator'>INCREMENTS</li>
+
+<li class='mutator'>INVERT_NEGS</li>
+
+<li class='mutator'>MATH</li>
+
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+
+<li class='mutator'>NULL_RETURNS</li>
+
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+
+<li class='mutator'>TRUE_RETURNS</li>
+
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>com.operations.Matrix.RegressionTest9.test5000(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4812(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1121(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1819(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5680(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3537(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2726(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1915(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6076(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5843(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6186(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4365(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0214(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3857(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5351(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5733(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0284(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest8.test4045(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3383(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3234(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1814(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3879(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6129(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2572(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5928(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0380(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3510(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6012(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1126(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0854(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0950(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6374(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2406(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0219(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4264(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0630(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4567(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1968(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4589(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3874(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1047(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5563(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5092(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5209(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4387(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5046(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1749(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1090(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6568(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3585(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0876(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5078(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6069(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0455(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest7.test3900(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4966(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0363(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1362(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0486(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2331(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6296(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2827(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5694(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5344(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3997(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4062(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6445(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1643(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2428(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2704(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5513(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4769(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6427(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5358(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1511(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2195(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4979(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3243(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0775(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2344(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2538(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1674(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3725(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2120(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1480(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2283(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1503(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4107(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5662(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4790(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2467(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0469(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1797(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4856(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0402(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6108(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4457(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4006(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1722(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1516(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0911(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5450(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6051(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5117(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5255(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1551(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0893(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0301(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2971(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4904(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2462(com.operations.Matrix.RegressionTest4) (2 ms)</li><li>com.operations.Matrix.RegressionTest8.test4001(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0236(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4873(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0499(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5425(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5914(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2226(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4834(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3125(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4040(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5305(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0846(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1845(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3313(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4500(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3830(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5751(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5411(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2361(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0371(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0792(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5156(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6257(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3524(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2384(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4839(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0376(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4286(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3918(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6190(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1297(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2660(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3541(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4991(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2178(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6140(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4716(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5003(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3002(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3625(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3572(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0222(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0867(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1774(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0675(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1854(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6260(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0643(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0345(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0509(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6292(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6158(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0121(com.operations.Matrix.RegressionTest0) (3 ms)</li><li>com.operations.Matrix.RegressionTest5.test2915(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0478(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2819(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4325(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5754(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4474(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5276(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1289(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1928(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3028(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5408(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5612(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6073(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4250(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1731(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4847(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4015(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1055(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3204(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4005(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1721(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0158(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2585(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1709(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4058(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.MatrixSolverTest.testSolveGaussianWithPivoting(com.operations.Matrix.MatrixSolverTest) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2616(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4693(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5120(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5982(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4900(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5465(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4826(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5269(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1498(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5259(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0653(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2142(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5219(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4405(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5497(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5149(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2165(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2419(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4116(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2319(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3897(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6431(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5330(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0788(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1806(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1906(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4592(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4347(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4496(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5400(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5167(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6218(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4282(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3226(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5535(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0323(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5871(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3295(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4027(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2388(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0899(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0591(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6151(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.MatrixSolverTest.testNonSquareMatrixThrowsException(com.operations.Matrix.MatrixSolverTest) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2830(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3006(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6417(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4436(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5829(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4712(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6101(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3694(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4869(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3594(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6111(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2804(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0034(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6222(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6399(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0189(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2187(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5141(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6172(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1919(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3286(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3150(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2896(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4782(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5128(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4273(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3514(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0609(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest6.test3497(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4760(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0480(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5099(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5634(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5772(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.MatrixApplicationTest.testSolveLinearSystem(com.operations.Matrix.MatrixApplicationTest) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4304(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3038(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2306(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4225(com.operations.Matrix.RegressionTest8) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5783(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1319(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2352(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2152(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3304(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4150(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0090(com.operations.Matrix.RegressionTest0) (3 ms)</li><li>com.operations.Matrix.RegressionTest9.test4883(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6339(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6022(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2906(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0810(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1688(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4195(com.operations.Matrix.RegressionTest8) (5 ms)</li><li>com.operations.Matrix.RegressionTest6.test3396(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4395(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2963(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5347(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4914(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3650(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5160(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6498(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6221(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1231(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4295(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2928(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5832(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5683(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2586(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5663(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0521(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2874(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2686(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0167(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5999(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5673(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1687(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2453(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0333(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2398(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3538(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3085(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3861(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1853(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1753(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4137(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3305(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1477(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2218(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5031(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0932(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2897(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5081(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3984(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1507(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4172(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1876(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3047(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5640(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6505(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1574(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0800(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5476(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2124(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3308(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0555(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4732(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3564(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1835(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4050(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2391(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1313(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3660(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1942(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5803(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3991(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4690(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1164(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6146(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1681(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5647(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3718(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1276(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3090(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1616(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0081(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest9.test4594(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0827(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2539(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5499(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4498(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0241(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0331(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2396(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3836(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1116(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5428(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4274(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2955(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0897(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3766(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6530(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3586(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4710(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0608(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2172(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1271(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5279(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4689(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2624(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4577(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0673(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0375(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5748(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0853(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2477(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1490(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5054(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0934(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1995(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4892(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4279(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0780(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6155(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1969(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4684(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1883(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2913(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0086(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1138(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3814(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4978(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4535(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6403(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1024(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6238(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5020(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2411(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0417(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4316(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2168(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4995(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5849(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1467(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3441(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2604(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5052(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4097(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3182(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4193(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4030(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4728(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2032(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5592(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5532(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0628(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1341(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0647(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6098(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0735(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4057(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4257(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4774(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1861(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3963(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0601(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0511(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4550(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1379(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0325(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest1.test0847(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1451(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1469(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2559(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4011(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5775(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.MatrixSolverTest.testSolveGaussianSingleVariable(com.operations.Matrix.MatrixSolverTest) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3443(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0693(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0101(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5924(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1186(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4822(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2238(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4934(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3288(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2326(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3547(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4412(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2843(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2643(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0741(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5741(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4100(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2010(com.operations.Matrix.RegressionTest4) (2 ms)</li><li>com.operations.Matrix.RegressionTest8.test4075(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2694(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0259(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5761(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2149(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2560(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0829(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2084(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0482(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3242(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5546(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3471(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3042(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4392(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5878(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3202(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5389(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1833(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3698(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5874(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6476(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1363(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2438(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2514(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4579(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0963(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3290(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3764(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1492(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5807(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3023(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4122(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3423(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2479(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3791(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4890(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1001(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2367(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3657(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0782(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4319(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4277(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3178(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4053(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3518(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5175(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0605(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5566(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3066(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5770(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0084(com.operations.Matrix.RegressionTest0) (4 ms)</li><li>com.operations.Matrix.RegressionTest1.test0515(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5800(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0627(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1502(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5439(com.operations.Matrix.RegressionTest10) (5 ms)</li><li>com.operations.Matrix.RegressionTest6.test3493(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0260(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest4.test2372(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4597(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6541(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6080(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2346(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4687(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0174(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest13.test6550(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1811(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0483(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5728(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3923(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1070(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6025(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3919(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2936(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5074(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1837(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1795(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5618(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2302(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4666(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6087(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3700(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1683(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2457(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1769(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3444(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2713(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6548(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0713(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5205(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4233(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2480(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0825(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest5.test2601(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6588(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4798(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3109(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2670(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6276(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6465(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1204(com.operations.Matrix.RegressionTest2) (5 ms)</li><li>com.operations.Matrix.RegressionTest7.test3680(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4532(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1972(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1523(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0372(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5847(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3355(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0197(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0671(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4643(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0061(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5223(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1160(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5243(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3632(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2533(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0373(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6539(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6304(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4190(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3922(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5283(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2192(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4121(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4388(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1426(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1026(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2735(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4390(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2413(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0039(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1548(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0937(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2323(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4843(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1794(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6532(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1748(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5443(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0440(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2213(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4618(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5915(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0804(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5935(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2281(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3333(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3045(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3878(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4009(com.operations.Matrix.RegressionTest8) (2 ms)</li><li>com.operations.Matrix.RegressionTest3.test1701(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3245(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3566(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4553(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0351(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest2.test1403(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0104(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0216(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6205(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0584(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4907(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest7.test3767(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5548(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2868(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1524(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2623(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5313(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0784(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest4.test2081(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2711(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1248(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3091(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4576(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4143(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5214(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6559(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2823(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6434(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0127(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1636(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2301(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3379(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1547(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0849(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest3.test1682(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3179(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2458(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4865(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3721(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3445(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6494(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3678(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2710(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1878(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3298(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4871(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5717(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4477(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2561(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1654(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0102(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3740(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5554(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4801(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest3.test1904(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1808(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0177(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0598(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5820(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1356(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6216(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6021(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2811(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4674(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5420(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4876(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5069(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5586(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4770(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3324(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1755(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5452(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0129(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest3.test1851(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3420(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1351(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5296(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2785(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5749(com.operations.Matrix.RegressionTest11) (2 ms)</li><li>com.operations.Matrix.RegressionTest13.test6570(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6060(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4604(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3596(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6358(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2881(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4258(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5484(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3100(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3447(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2434(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2097(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3149(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5094(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0475(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4499(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6113(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1382(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4087(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6506(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4424(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4179(com.operations.Matrix.RegressionTest8) (2 ms)</li><li>com.operations.Matrix.RegressionTest12.test6099(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2956(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0343(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest2.test1062(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1957(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3885(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2088(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4635(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest4.test2294(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1387(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6443(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6248(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2268(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1404(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5374(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0742(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0466(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest10.test5012(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2311(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5827(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1803(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3605(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0891(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6124(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1527(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4481(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5356(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1839(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test1000(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6489(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5211(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3552(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0751(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1562(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3829(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4744(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0269(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0453(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5735(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3557(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5579(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1168(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6234(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6312(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4517(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3254(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1005(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3587(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3158(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2776(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0711(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4345(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2872(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1146(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5431(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1628(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0668(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5275(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0431(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6188(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3653(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1216(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1106(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2855(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5795(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6347(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5799(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1505(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3582(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6376(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0887(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0540(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4963(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0264(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1890(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0287(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2671(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2771(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3088(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6223(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4429(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1991(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0992(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4275(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0641(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3060(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2061(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1334(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4539(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4292(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6432(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6422(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1816(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6482(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5186(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4323(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2737(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3136(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0952(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3841(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1163(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4845(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1733(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3701(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3271(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1457(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5395(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2614(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5973(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0334(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0281(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2553(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1321(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0489(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4197(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3316(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6362(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6517(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4261(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2404(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5158(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0110(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2175(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4682(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3806(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2596(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1689(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4713(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5635(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0531(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5909(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6081(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2772(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1391(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6198(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3487(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2942(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3407(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0068(com.operations.Matrix.RegressionTest0) (3 ms)</li><li>com.operations.Matrix.RegressionTest0.test0019(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest1.test0734(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2276(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5456(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1790(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1629(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6524(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4526(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6534(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1098(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3284(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6173(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3337(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0510(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest13.test6516(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0580(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1640(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3797(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0888(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3338(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4884(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4004(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6566(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4692(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1763(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5831(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0919(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6258(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0856(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest1.test0756(com.operations.Matrix.RegressionTest1) (2 ms)</li><li>com.operations.Matrix.RegressionTest10.test5197(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1044(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1843(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0366(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4416(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5002(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6103(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5080(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0234(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4473(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1754(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3749(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6535(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3486(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2387(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4126(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3560(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6497(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6450(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1930(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0743(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4161(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4302(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6209(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6192(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5813(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3683(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4901(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4582(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3262(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4613(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4073(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0890(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3297(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1299(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2762(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3097(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2286(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4284(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4670(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2952(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2839(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3240(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3128(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0168(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest6.test3363(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1631(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4060(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5278(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2685(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1519(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0178(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4683(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5417(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2716(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5991(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0967(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5437(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4438(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0708(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2706(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2628(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6428(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.MatrixSolverTest.testConstantsSizeMismatchThrowsException(com.operations.Matrix.MatrixSolverTest) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5327(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4148(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4283(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6201(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1864(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6458(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0577(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1576(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2863(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5922(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6301(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6478(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1119(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2505(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0467(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2206(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0279(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5812(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4625(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4925(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3285(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1653(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2341(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6219(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3561(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3838(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5852(com.operations.Matrix.RegressionTest11) (2 ms)</li><li>com.operations.Matrix.RegressionTest9.test4859(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4959(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4902(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0256(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest6.test3439(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5377(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3784(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0246(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2918(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5562(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5594(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4114(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0406(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1734(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5725(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1009(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4173(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2972(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1622(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4439(com.operations.Matrix.RegressionTest8) (2 ms)</li><li>com.operations.Matrix.RegressionTest6.test3148(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2449(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0070(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest1.test0768(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2988(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1675(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0923(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4088(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3932(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4940(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.MatrixSolverTest.testSolveGaussian(com.operations.Matrix.MatrixSolverTest) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1419(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1580(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1079(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5789(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1329(com.operations.Matrix.RegressionTest2) (2 ms)</li><li>com.operations.Matrix.RegressionTest8.test4178(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6052(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5945(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1605(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3617(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1958(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1515(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3713(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0454(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5718(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2497(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3819(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2242(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6123(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6105(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3842(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4561(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest9.test4658(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2944(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2177(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4471(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0075(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4984(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4715(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1458(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3597(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6576(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5215(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2609(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5352(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2380(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2045(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5702(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4333(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6578(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3409(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1307(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2488(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0423(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0656(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4829(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1846(com.operations.Matrix.RegressionTest3) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5700(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5853(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2593(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5505(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3505(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4855(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3954(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4849(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest12.test6288(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5819(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1778(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1280(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0493(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5336(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6270(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3952(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4563(com.operations.Matrix.RegressionTest9) (2 ms)</li><li>com.operations.Matrix.RegressionTest11.test5897(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0314(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1392(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4134(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4651(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6469(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1368(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2051(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5251(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4568(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2519(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2155(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5576(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2607(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1456(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0165(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6567(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0069(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest7.test3869(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2096(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5918(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4241(com.operations.Matrix.RegressionTest8) (2 ms)</li><li>com.operations.Matrix.RegressionTest9.test4723(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2472(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2719(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3393(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6307(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1416(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3387(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4198(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0029(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0730(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2749(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2632(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5927(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0687(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5601(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4697(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1868(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4358(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6560(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1821(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1874(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3437(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1439(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0530(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1784(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2595(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1239(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2138(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0024(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0187(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6233(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0299(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1844(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2994(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5222(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3930(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3730(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4375(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0858(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0159(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest6.test3460(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4811(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0729(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3887(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4092(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6297(com.operations.Matrix.RegressionTest12) (6 ms)</li><li>com.operations.Matrix.RegressionTest8.test4086(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0476(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1240(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2854(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2637(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4739(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1397(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0752(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2654(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4791(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4591(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4516(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5359(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5828(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4330(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2814(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5855(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1284(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5424(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0430(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5745(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5549(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5314(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1534(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6244(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3258(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1561(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1236(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4090(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6509(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5293(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4021(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0025(com.operations.Matrix.RegressionTest0) (2 ms)</li><li>com.operations.Matrix.RegressionTest1.test0637(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2223(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2292(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3753(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6345(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3300(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0164(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4943(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1758(com.operations.Matrix.RegressionTest3) (2 ms)</li><li>com.operations.Matrix.RegressionTest5.test2681(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6542(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2702(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0793(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2356(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1081(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6057(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2836(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1737(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5668(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5736(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3321(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3843(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0996(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2202(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6127(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2990(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5996(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1150(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3301(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3908(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2357(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5235(com.operations.Matrix.RegressionTest10) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0596(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5626(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0862(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4921(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2245(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6473(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1826(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3146(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0925(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2494(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6433(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0317(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0052(com.operations.Matrix.RegressionTest0) (3 ms)</li><li>com.operations.Matrix.RegressionTest9.test4655(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2947(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4356(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2767(com.operations.Matrix.RegressionTest5) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3081(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4606(com.operations.Matrix.RegressionTest9) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6086(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1149(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5610(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4675(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1237(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5630(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4699(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4089(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3411(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1037(com.operations.Matrix.RegressionTest2) (1 ms)</li><li>com.operations.Matrix.RegressionTest10.test5055(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest3.test1647(com.operations.Matrix.RegressionTest3) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0226(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4289(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5727(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2592(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6136(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2112(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest8.test4110(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2680(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest12.test6226(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2880(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5617(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0184(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0384(com.operations.Matrix.RegressionTest0) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1914(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3344(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3144(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5587(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5125(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4131(com.operations.Matrix.RegressionTest8) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6591(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest0.test0450(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest13.test6551(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6571(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3457(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5796(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1259(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest9.test4630(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest2.test1371(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest5.test2522(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2181(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5806(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3978(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3480(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0861(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest11.test5846(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3578(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2093(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest3.test1825(com.operations.Matrix.RegressionTest3) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2381(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3666(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2493(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5134(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest0.test0051(com.operations.Matrix.RegressionTest0) (3 ms)</li><li>com.operations.Matrix.RegressionTest0.test0451(com.operations.Matrix.RegressionTest0) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4854(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5558(com.operations.Matrix.RegressionTest11) (1 ms)</li><li>com.operations.Matrix.RegressionTest6.test3256(com.operations.Matrix.RegressionTest6) (1 ms)</li><li>com.operations.Matrix.RegressionTest9.test4519(com.operations.Matrix.RegressionTest9) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0972(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2069(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest12.test6235(com.operations.Matrix.RegressionTest12) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0615(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest5.test2968(com.operations.Matrix.RegressionTest5) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5244(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2470(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest2.test1148(com.operations.Matrix.RegressionTest2) (0 ms)</li><li>com.operations.Matrix.RegressionTest13.test6569(com.operations.Matrix.RegressionTest13) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3191(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest10.test5363(com.operations.Matrix.RegressionTest10) (1 ms)</li><li>com.operations.Matrix.RegressionTest1.test0572(com.operations.Matrix.RegressionTest1) (5 ms)</li><li>com.operations.Matrix.RegressionTest4.test2135(com.operations.Matrix.RegressionTest4) (1 ms)</li><li>com.operations.Matrix.RegressionTest7.test3690(com.operations.Matrix.RegressionTest7) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5677(com.operations.Matrix.RegressionTest11) (0 ms)</li><li>com.operations.Matrix.RegressionTest6.test3279(com.operations.Matrix.RegressionTest6) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0749(com.operations.Matrix.RegressionTest1) (0 ms)</li><li>com.operations.Matrix.RegressionTest7.test3709(com.operations.Matrix.RegressionTest7) (1 ms)</li><li>com.operations.Matrix.RegressionTest4.test2401(com.operations.Matrix.RegressionTest4) (0 ms)</li><li>com.operations.Matrix.RegressionTest1.test0949(com.operations.Matrix.RegressionTest1) (1 ms)</li><li>com.operations.Matrix.RegressionTest8.test4066(com.operations.Matrix.RegressionTest8) (0 ms)</li><li>com.operations.Matrix.RegressionTest11.test5540(com.operations.Matrix.RegressionTest11) (2 ms)</li><li>com.operations.Matrix.RegressionTest12.test6484(com.operations.Matrix.RegressionTest12) (0 ms)</li><li>com.operations.Matrix.RegressionTest4.test2270(com.operations.Matrix.RegressionTest4) (0 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='https://pitest.org'>PIT</a> 1.14.0
+
+</body>
+</html>
